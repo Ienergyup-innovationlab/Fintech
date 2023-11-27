@@ -6,7 +6,7 @@ import AppleIcon from "@mui/icons-material/Apple";
 function login() {
   return (
     <div className=" ">
-      <div className=" flex flex-col items-center justify-between mt-5">
+      <div className=" flex flex-col items-center justify-between mt-4">
         <img src={loginicon} alt="login icon" />
         <h2 className=" uppercase text-2xl font-extrabold font-font1 mt-5">
           {" "}
