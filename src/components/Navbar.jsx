@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Button from "./Button";
+import Button from "../pages/LandingPage/components/Button";
 import Logo from "/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [drop, setDrop] = useState(false);
+  const location = useLocation();
 
   const handleDrop = () => {
     setDrop(!drop);
@@ -13,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className=" text-black relative bg-slade  py-3 font-libre">
       <div className="px-1  md:px-10 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-x-1">
+        <Link to="/" className={`flex items-center gap-x-1`}>
           <img
             src={Logo}
             alt="Company logo"
@@ -22,8 +23,22 @@ export default function Navbar() {
           <h1 className="text-lg lg:text-xl font-[700]">FundCraft</h1>
         </Link>
         <div className="hidden font-[700]  md:flex lg:flex items-center space-x-12 mr-28 text-lg ">
-          <Link to="/aboutus">About</Link>
-          <Link to="/login">Login</Link>
+          <Link
+            to="/aboutUs"
+            className={`${
+              location.pathname === "/aboutUs" ? "text-purple" : ""
+            } `}
+          >
+            About
+          </Link>
+          <Link
+            to="/login"
+            className={`${
+              location.pathname === "/login" ? "text-purple" : ""
+            } `}
+          >
+            Login
+          </Link>
         </div>
         {drop ? (
           <div onClick={handleDrop} className="pr-5">
