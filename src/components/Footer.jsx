@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-slade font-libre py-9 px-3">
       <div>
-        <h1 className="text-4xl">Fintech App</h1>
+        <h1 className="text-4xl">FundCraft App</h1>
         <div className="flex items-center  space-x-4">
           <Link to="/">
             <img src="/googleplay.svg" alt="" className="w-36 h-36 p-0" />
