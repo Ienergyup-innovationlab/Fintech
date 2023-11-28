@@ -9,8 +9,8 @@ export default function Hero() {
         className="h-[800px] object-cover  w-full  sm:bg-contain "
       />
       <div className="absolute text-white text-center">
-        <h1 className="text-[80px] -mt-28 text-black font-[700] lg:text-9xl ">
-          Fintech
+        <h1 className="text-[65px] -mt-28 text-black font-[700] lg:text-8xl ">
+          FundCraft
         </h1>
         <p className="text-[35px] max-w-md mx-auto mt-8 text-black lg:text-5xl lg:max-w-3xl font-[700]">
           Business Investor Platform
