@@ -65,13 +65,17 @@ export default function Navbar() {
               About
             </Link>
           </div>
-          <Button text="Sign Up" url="/signup" variant="py-3 px-3 text-white" />
+          <Button
+            text="Register"
+            url="/onBoard"
+            variant="py-3 px-3 text-white"
+          />
         </div>
       </div>
       {drop && (
         <div className=" p-7 right-3 max-h-min flex flex-col space-y-6 pt-3 pl-2 text-center text-xl">
           <Link to="/aboutus">About</Link>
-          <Link to="/login">Sign Up</Link>
+          <Link to="/onBoard">Sign Up</Link>
         </div>
       )}
     </nav>
