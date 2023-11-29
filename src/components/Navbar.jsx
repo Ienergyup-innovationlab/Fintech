@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Button from "./Button";
-import Logo from "../components/images/logo.png";
+import Button from "../pages/LandingPage/components/Button";
+import Logo from "/Logo.png";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {

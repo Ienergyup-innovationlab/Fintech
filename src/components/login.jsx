@@ -1,14 +1,14 @@
-import loginicon from "../images/loginIcon.png";
-import fbicon from "../images/facebook.png";
-import googleicon from "../images/google.png";
+import loginicon from "./images/loginIcon.png";
+import fbicon from "./images/facebook.png";
+import googleicon from "./images/google.png";
 import AppleIcon from "@mui/icons-material/Apple";
 
 function login() {
   return (
-    <div className=" h-fit md:max-h-64 ">
-      <div className=" flex flex-col items-center justify-between mt-4 my-auto">
+    <div className=" ">
+      <div className=" flex flex-col items-center justify-between mt-4">
         <img src={loginicon} alt="login icon" />
-        <h2 className=" uppercase text-3xl font-bold md:mt-0 mt-5">sign in</h2>
+        <h2 className=" uppercase text-3xl font-bold mt-5">sign in</h2>
       </div>
       <div className=" inputs mt-6 ">
         <form className=" items-center justify-center flex">
@@ -31,7 +31,7 @@ function login() {
           </div>
         </form>
       </div>
-      <button className="Login bg-fuchsia-600 items-center justify-center w-[310px] h-14 flex mx-auto rounded-xl text-white font-bold font-font1 text-xl mt-3">
+      <button className="Login bg-purple-600 items-center justify-center w-[310px] h-14 flex mx-auto rounded-xl text-white font-bold font-font1 text-xl mt-3">
         Login
       </button>
       <p className=" text-center mt-3 text-slate-500 text-lg font-nanum font-medium mb-2">
