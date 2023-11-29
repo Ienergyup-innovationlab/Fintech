@@ -1,10 +1,11 @@
 import Button from "./Button";
+import Hero2 from "./images/hero2.jpg";
 
 export default function Hero() {
   return (
     <div className="relative flex items-center justify-center font-libre">
       <img
-        src="/hero2.jpg"
+        src={Hero2}
         alt=""
         className="h-[800px] object-cover  w-full  sm:bg-contain "
       />
