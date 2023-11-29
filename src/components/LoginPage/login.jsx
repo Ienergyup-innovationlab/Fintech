@@ -1,4 +1,4 @@
-import loginicon from "../images/loginicon.png";
+import loginicon from "../images/loginIcon.png";
 import fbicon from "../images/facebook.png";
 import googleicon from "../images/google.png";
 import AppleIcon from "@mui/icons-material/Apple";
