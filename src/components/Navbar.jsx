@@ -22,24 +22,7 @@ export default function Navbar() {
           />
           <h1 className="text-lg lg:text-xl font-[700]">FundCraft</h1>
         </Link>
-        <div className="hidden font-[700]  md:flex lg:flex items-center space-x-12 mr-28 text-lg ">
-          <Link
-            to="/aboutUs"
-            className={`${
-              location.pathname === "/aboutUs" ? "text-purple" : ""
-            } `}
-          >
-            About
-          </Link>
-          <Link
-            to="/login"
-            className={`${
-              location.pathname === "/login" ? "text-purple" : ""
-            } `}
-          >
-            Login
-          </Link>
-        </div>
+
         {drop ? (
           <div onClick={handleDrop} className="pr-5">
             <svg
@@ -71,14 +54,24 @@ export default function Navbar() {
             </svg>
           </div>
         )}
-        <div className="hidden md:block lg:block">
+        <div className="hidden md:block lg:flex space-x-16 items-center">
+          <div className="hidden font-[700]  md:flex lg:flex items-center   text-lg ">
+            <Link
+              to="/aboutUs"
+              className={`${
+                location.pathname === "/aboutUs" ? "text-purple" : ""
+              } `}
+            >
+              About
+            </Link>
+          </div>
           <Button text="Sign Up" url="/signup" variant="py-3 px-3 text-white" />
         </div>
       </div>
       {drop && (
         <div className=" p-7 right-3 max-h-min flex flex-col space-y-6 pt-3 pl-2 text-center text-xl">
           <Link to="/aboutus">About</Link>
-          <Link to="/login">Login</Link>
+          <Link to="/login">Sign Up</Link>
         </div>
       )}
     </nav>

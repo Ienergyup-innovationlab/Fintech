@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import Button from "../LandingPage/components/Button";
 
 export default function AboutPage() {
   return (
@@ -42,6 +43,11 @@ export default function AboutPage() {
               odit, a, facere commodi, obcaecati est! Velit ullam accusamus
               deleniti consequatur quidem eaque sed sequi iste.
             </p>
+            <Button
+              text="Try the Web Version"
+              url="/signUp"
+              variant="py-3 px-3 text-white -ml-2"
+            />
           </div>
         </div>
       </div>

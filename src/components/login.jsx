@@ -44,7 +44,6 @@ function login() {
         <div className="socials flex items-center justify-evenly mb-10 md:justify-center ">
           <img src={googleicon} alt="" className=" px-2" />
           <img src={fbicon} alt="" className=" px-2  pr-5" />
-
           <AppleIcon />
         </div>
       </div>
