@@ -45,7 +45,7 @@ export default function AboutPage() {
             </p>
             <Button
               text="Try the Web Version"
-              url="/onBoard"
+              url="/signUp"
               variant="py-3 px-3 text-white -ml-2"
             />
           </div>
