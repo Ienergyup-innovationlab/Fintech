@@ -15,7 +15,7 @@ export default function AboutPage() {
           />
         </div>
         <div className="mx-8 pb-28 font-nanum lg:w-[50%] ">
-          <h1 className="text-3xl mt-8 font-libre">We Are FundCraft</h1>
+          <h1 className="text-3xl mt-8 font-libre px-2">We Are FundCraft</h1>
           <div className="px-2">
             <p className="font-nanum italic text-xl py-7">
               Our journey started with a simple idea - to revolutionize the
