@@ -18,7 +18,7 @@ export default function OnBoardPage2({ onPrev }) {
             <Button
               text="Register"
               variant="bg-white py-2 rounded-lg w- text-center w-80 hover:text-purple  px-3 text-xl"
-              url="/signUp"
+              url="/signup"
             />
             <Button
               text="Sign In"
