@@ -1,7 +1,7 @@
 import Login from "./components/login";
 import { Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage/LandingPage";
-import AboutPage from "./pages/AboutPage/AboutPage";
+import LandingPage from "./components/LandingPage/LandingPage";
+import AboutPage from "./components/AboutPage/AboutPage";
 
 function App() {
   return (
