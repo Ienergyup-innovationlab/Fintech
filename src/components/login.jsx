@@ -38,7 +38,7 @@ function login() {
         Dont have an account? <span className=" text-red-500"> Signup</span>{" "}
         <br /> or continue with
       </p>
-      <div className="socials flex items-center justify-evenly mb-10 ">
+      <div className="socials flex items-center justify-evenly mb-8 ">
         <img src={googleicon} alt="" />
         <img src={fbicon} alt="" />
         <AppleIcon />
