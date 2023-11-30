@@ -13,7 +13,7 @@ export default function SignUp() {
   };
 
   return (
-    <div>
+    <div className="overflow-y-hidden overflow-x-hidden">
       {currentStep === 1 && <StepOne onNext={handleNext} />}
       {currentStep == 2 && <StepTwo onNext={handleNext} onPrev={handlePrev} />}
     </div>
