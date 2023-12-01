@@ -6,6 +6,10 @@ export default {
       colors: {
         purple: "#805DB3",
         slade: "#F4F4F3",
+        red: "#D63A3A",
+        grey: "#e5e7eb",
+        primary: "#805DB3",
+        black: "#000000"
       },
     },
     fontFamily: {
