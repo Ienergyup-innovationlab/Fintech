@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
 import InvestPref from "./pages/InvestmentPreference";
+import InvestorReg from "./pages/InvestorRegistration";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/aboutUs" element={<AboutPage />} />
         <Route path="/InvestmentPreference" element={<InvestPref />} />
+        <Route path="/InvestorRegistration" element={<InvestorReg />} />
       </Routes>
     </>
   );

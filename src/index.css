@@ -5,3 +5,17 @@
 @tailwind components;
 @tailwind utilities;
 
+#ellipse {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    shape-outside: ellipse(20% 50%);
+    clip-path: ellipse(20% 50%);
+    background: #805DB3;
+}
+
+.investor-hero {
+    background-image: url("./components/images/hero-backImg.jpg");
+    width: 100%;
+    height: 300px;
+}
