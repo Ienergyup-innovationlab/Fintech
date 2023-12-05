@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Button from "./Button";
+import Button from "./LandingPage/components/Button";
 import Logo from "/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [drop, setDrop] = useState(false);
+  const location = useLocation();
 
   const handleDrop = () => {
     setDrop(!drop);
@@ -13,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className=" text-black relative bg-slade  py-3 font-libre">
       <div className="px-1  md:px-10 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-x-1">
+        <Link to="/" className={`flex items-center gap-x-1`}>
           <img
             src={Logo}
             alt="Company logo"
@@ -21,10 +22,7 @@ export default function Navbar() {
           />
           <h1 className="text-lg lg:text-xl font-[700]">FundCraft</h1>
         </Link>
-        <div className="hidden font-[700]  md:flex lg:flex items-center space-x-12 mr-28 text-lg ">
-          <Link to="/aboutus">About</Link>
-          <Link to="/login">Login</Link>
-        </div>
+
         {drop ? (
           <div onClick={handleDrop} className="pr-5">
             <svg
@@ -56,14 +54,28 @@ export default function Navbar() {
             </svg>
           </div>
         )}
-        <div className="hidden md:block lg:block">
-          <Button text="Sign Up" url="/signup" variant="py-3 px-3 text-white" />
+        <div className="hidden md:block lg:flex space-x-16 items-center">
+          <div className="hidden font-[700]  md:flex lg:flex items-center   text-lg ">
+            <Link
+              to="/aboutUs"
+              className={`${
+                location.pathname === "/aboutUs" ? "text-purple" : ""
+              } `}
+            >
+              About
+            </Link>
+          </div>
+          <Button
+            text="Register"
+            url="/onBoard"
+            variant="py-3 px-3 text-white"
+          />
         </div>
       </div>
       {drop && (
         <div className=" p-7 right-3 max-h-min flex flex-col space-y-6 pt-3 pl-2 text-center text-xl">
           <Link to="/aboutus">About</Link>
-          <Link to="/login">Login</Link>
+          <Link to="/onBoard">Sign Up</Link>
         </div>
       )}
     </nav>
