@@ -76,6 +76,11 @@ export default function Navbar() {
         <div className=" p-7 right-3 max-h-min flex flex-col space-y-6 pt-3 pl-2 text-center text-xl">
           <Link to="/aboutus">About</Link>
           <Link to="/onBoard">Sign Up</Link>
+          <Button
+            text="Register"
+            url="/onBoard"
+            variant="py-3 w-2/4  mx-auto  px-1 text-white"
+          />
         </div>
       )}
     </nav>
