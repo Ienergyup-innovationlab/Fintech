@@ -1,5 +1,5 @@
 
-import InvestmentPref from "../components/InvestPreference";
+import InvestmentPref from "../InvestorPref/InvestPreference";
 
 const InvestmentPreference = () => {
   return (

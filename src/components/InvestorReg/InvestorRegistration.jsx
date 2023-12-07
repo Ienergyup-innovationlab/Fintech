@@ -1,4 +1,4 @@
-import InvestorReg from "../components/InvestorReg";
+import InvestorReg from "../InvestorReg/InvestorReg";
 
 const InvestorRegistration = () => {
   return (
