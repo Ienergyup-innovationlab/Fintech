@@ -9,7 +9,7 @@ export default function OnBoardPage2({ onPrev }) {
           <img
             src="/Agreement.png"
             alt=""
-            className="w-72 h-72 lg:w-96 lg:h-96   "
+            className="w-64 h-64 lg:w-96 lg:h-96   "
           />
           <h1 className="mt-9 font-bold  text-center text-white text-3xl  ">
             Best Place To Invest
