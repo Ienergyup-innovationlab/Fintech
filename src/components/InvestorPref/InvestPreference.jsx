@@ -97,7 +97,7 @@ function InvestPreference() {
         </>
 
     );
-};
+}
     
 export default InvestPreference;
 
