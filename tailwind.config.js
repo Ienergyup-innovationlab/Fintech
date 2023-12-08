@@ -13,6 +13,8 @@ export default {
         grey: "#e5e7eb",
         primary: "#805DB3",
         black: "#000000",
+        brickRed: "#D63A3A",
+        inputGrey: "#F7F7F7",
       },
     },
     fontFamily: {

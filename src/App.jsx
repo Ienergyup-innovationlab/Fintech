@@ -19,7 +19,7 @@ function App() {
         <Route path="/InvestmentPreference" element={<InvestPref />} />
         <Route path="/InvestorRegistration" element={<InvestorReg />} />
         <Route
-          path="/signUp/BusinessRegistration"
+          path="/BusinessRegistration"
           element={<BusinessInvestorForm />}
         />
       </Routes>
