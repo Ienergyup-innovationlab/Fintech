@@ -6,7 +6,7 @@ function signUp() {
       <h2 className=" md:text-4xl  text-xl font-semibold md:text-black text-white font-nanum capitalize pb-4">
         Register new account
       </h2>
-      <p className="hidden md:flex text-center mx-auto  text-base font-semibold">
+      <p className="hidden md:flex text-center mx-auto  text-base font-nanum">
         Fundcraft has various categories of users.
         <br /> Kindly select who you would like to sign up as
       </p>
@@ -17,7 +17,7 @@ function signUp() {
       />
       <Button
         text="Business account"
-        url="/InvestorRegistration"
+        url="/BusinessRegistration"
         variant=" bg-white text-black md:hover:bg-violet-950 transition-all md:bg-purple items-center justify-center w-[350px] h-12  capitalize flex  rounded-xl md:text-white font-semibold text-lg mt-5"
       />
       <Button
