@@ -67,14 +67,14 @@ export const InvestorReg = () => {
             </section>
 
             <section className="w-full flex flex-col mt-12">
+              <button
+                type="submit"
+                className="p-4 inline-flex justify-center items-center rounded-lg border border-transparent bg-primary text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-base dark:focus:ring-offset-gray-800"
+              >
               <Link to="/InvestmentPreference">
-                <button
-                  type="submit"
-                  className="p-4 inline-flex justify-center items-center rounded-lg border border-transparent bg-primary text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-base dark:focus:ring-offset-gray-800"
-                >
-                  Next
-                </button>
+                Next
               </Link>
+              </button>
             </section>
           </div>
         </form>
