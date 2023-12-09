@@ -6,6 +6,7 @@ import Boarding from "./components/OnBoardPages/Boarding";
 import SignUp from "./components/SignupPage/signUp";
 import InvestPref from "./components/InvestorPref/InvestmentPreference";
 import InvestorReg from "./components/InvestorReg/InvestorRegistration";
+import BusinessInvestorForm from "./components/BusinessAccount/BusinessInvestorForm";
 function App() {
   return (
     <>
@@ -17,6 +18,10 @@ function App() {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/InvestmentPreference" element={<InvestPref />} />
         <Route path="/InvestorRegistration" element={<InvestorReg />} />
+        <Route
+          path="/BusinessRegistration"
+          element={<BusinessInvestorForm />}
+        />
       </Routes>
     </>
   );

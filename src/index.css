@@ -10,6 +10,39 @@
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+.custom-range-slider {
+  -webkit-appearance: none;
+  width: 600px;
+  height: 10px;
+  background-color: #805db3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  margin-top: -4px;
+}
+
+.custom-range-slider:hover {
+  opacity: 1;
+}
+
+.custom-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #805db3;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.custom-range-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background-color: #3490dc;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 #ellipse {
   margin-top: 20px;
 }
@@ -21,7 +54,8 @@
   display: none;
 }
 
-textarea, input {
+textarea,
+input {
   font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -41,7 +75,13 @@ textarea, input {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) {
+  .custom-range-slider {
+    width: 345px;
+  }
+}
+
+@media screen and (min-width: 600px) {
   .investor-hero {
     display: block;
   }
@@ -52,5 +92,9 @@ textarea, input {
 
   .m-deskbg {
     display: none;
+  }
+
+  .custom-range-slider {
+    width: 600px;
   }
 }
