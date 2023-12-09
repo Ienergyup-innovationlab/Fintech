@@ -39,6 +39,47 @@ export default function PageTwo({ handleNext, handlePrevious }) {
 
           <RangeSlider />
 
+          <label htmlFor="Legal" className="mt-5">
+            Legal <span className="text-brickRed ">*</span>
+          </label>
+
+          <input
+            type="file"
+            name="upload"
+            accept="application/pdf"
+            placeholder="Business Registration"
+            className="bg-inputGrey mt-3 w-[345px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3 "
+          />
+          <span className="text-xs text-gray-500">
+            *Files Supported: pdf only
+          </span>
+
+          <input
+            type="file"
+            name="upload"
+            accept="application/pdf"
+            placeholder="Licenses and Permits"
+            className="bg-inputGrey mt-3 w-[345px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3 "
+          />
+          <span className="text-xs text-gray-500">
+            *Files Supported: pdf only
+          </span>
+
+          <label htmlFor="Legal" className="mt-5">
+            Banking Information <span className="text-brickRed ">*</span>
+          </label>
+
+          <input
+            type="file"
+            name="upload"
+            accept="application/pdf"
+            placeholder="Account statement"
+            className="bg-inputGrey mt-3 w-[345px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3 "
+          />
+          <span className="text-xs text-gray-500">
+            *Files Supported: pdf only
+          </span>
+
           <div className="flex items-center justify-around mr-12 lg:mr-20">
             <Button
               text="Previous"
