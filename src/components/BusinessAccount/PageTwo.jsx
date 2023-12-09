@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Button from "../LandingPage/components/Button";
 import RangeSlider from "./components/RangeSlider";
-export default function PageTwo({ handleNext, handlePrevious }) {
+export default function PageTwo({ handleSubmit, handlePrevious }) {
   return (
     <>
       <div className="pl-7 lg:px-9">
@@ -87,9 +87,9 @@ export default function PageTwo({ handleNext, handlePrevious }) {
               onClick={handlePrevious}
             />
             <Button
-              text="Next"
+              text="Submit"
               variant="bg-purple w-[100px] text-center py-2 px-2 mx-auto text-white font-naunum mt-10 "
-              onClick={handleNext}
+              onClick={handleSubmit}
             />
           </div>
         </div>

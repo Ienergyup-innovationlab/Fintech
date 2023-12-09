@@ -15,10 +15,10 @@ export default function BusinessInvestorForm() {
   };
 
   // To be used later for submitting the form
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Submitted!!");
+  };
 
   return (
     <div className="flex flex-col lg:flex-row lg:justify-between">
@@ -34,7 +34,11 @@ export default function BusinessInvestorForm() {
         <form>
           {step == 1 && <PageOne handleNext={handleNext} />}
           {step == 2 && (
-            <PageTwo handleNext={handleNext} handlePrevious={handlePrevious} />
+            <PageTwo
+              handleNext={handleNext}
+              handlePrevious={handlePrevious}
+              handleSubmit={handleSubmit}
+            />
           )}
         </form>
       </div>
