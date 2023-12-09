@@ -11,9 +11,11 @@ export default function PageTwo({ handleNext, handlePrevious }) {
 
         <div className="flex flex-col mb-10 ">
           <input
-            type="text"
+            type="file"
+            name="upload"
+            accept="application/pdf"
             placeholder="Upload your revenue profit/loss statements"
-            className="bg-inputGrey mt-3 w-[345px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3"
+            className="bg-inputGrey mt-3 w-[345px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3 "
           />
           <span className="text-xs text-gray-500">
             *Files Supported: pdf only
