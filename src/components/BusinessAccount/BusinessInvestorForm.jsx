@@ -15,25 +15,30 @@ export default function BusinessInvestorForm() {
   };
 
   // To be used later for submitting the form
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Submitted!!");
+  };
 
   return (
     <div className="flex flex-col lg:flex-row lg:justify-between">
-      <div className="lg:w-1/2">
+      <div className="lg:w-1/2 lg:min-h-screen">
         <img
           src="/buisness.jpg"
           alt=""
-          className="h-[390px] w-full  object-cover  rounded-br-[1000px] lg:rounded-none lg:min-h-screen "
+          className="h-[390px] lg:h-screen w-full object-cover rounded-br-[1000px] lg:rounded-none lg:min-h-full"
         />
       </div>
+
       <div className="md:w-1/2">
         <form>
           {step == 1 && <PageOne handleNext={handleNext} />}
           {step == 2 && (
-            <PageTwo handleNext={handleNext} handlePrevious={handlePrevious} />
+            <PageTwo
+              handleNext={handleNext}
+              handlePrevious={handlePrevious}
+              handleSubmit={handleSubmit}
+            />
           )}
         </form>
       </div>
