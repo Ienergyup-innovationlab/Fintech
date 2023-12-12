@@ -91,9 +91,11 @@ export default function PageTwo({
             placeholder="Business Registration"
             value={formData.businessRegistration}
             onChange={(e) => {
+              const file = e.target.files[0];
+
               setformData({
                 ...formData,
-                businessRegistration: e.target.value,
+                businessRegistration: file,
               });
             }}
             className="bg-inputGrey mt-3 w-[335px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3 "
@@ -102,14 +104,19 @@ export default function PageTwo({
             *Files Supported: pdf only
           </span>
 
+          <label htmlFor="Legal" className="mt-5">
+            Licenses and Permits <span className="text-brickRed ">*</span>
+          </label>
+
           <input
             type="file"
             name="upload"
             accept="application/pdf"
             placeholder="Licenses and Permits"
-            value={formData.licensesAndPermits}
             onChange={(e) => {
-              setformData({ ...formData, licensesAndPermits: e.target.files });
+              const file = e.target.files[0];
+
+              setformData({ ...formData, licensesAndPermits: file });
             }}
             className="bg-inputGrey mt-3 w-[335px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3 "
           />
@@ -126,9 +133,9 @@ export default function PageTwo({
             name="upload"
             accept="application/pdf"
             placeholder="Account statement"
-            value={formData.accountStatement}
             onChange={(e) => {
-              setformData({ ...formData, accountStatement: e.target.files });
+              const file = e.target.files[0];
+              setformData({ ...formData, accountStatement: file });
             }}
             className="bg-inputGrey mt-3 w-[335px] h-[56px] p-5 focus:outline-none focus:ring focus:ring-purple lg:w-[600px] text-sm my-3 "
           />

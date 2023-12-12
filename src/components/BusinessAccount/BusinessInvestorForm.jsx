@@ -23,7 +23,7 @@ export default function BusinessInvestorForm() {
     taxIdentificationNumber: "",
     purposeOfInvestment: "",
     valueOfEquity: 0,
-    businessRegistration: "",
+    businessRegistration: null,
     licensesAndPermits: null,
     accountStatement: null,
   });
