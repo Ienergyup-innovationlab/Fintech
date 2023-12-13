@@ -92,7 +92,6 @@ export default function PageTwo({
             value={formData.businessRegistration}
             onChange={(e) => {
               const file = e.target.files[0];
-
               setformData({
                 ...formData,
                 businessRegistration: file,
