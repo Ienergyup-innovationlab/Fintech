@@ -13,7 +13,7 @@ export default function BusinessInvestorForm() {
     setStep((prevStep) => prevStep - 1);
   };
 
-  const [formData, setformData] = useState({
+  const [formData, setFormData] = useState({
     businessName: "",
     businessEmail: "",
     businessPhoneNumber: "",
@@ -26,15 +26,12 @@ export default function BusinessInvestorForm() {
     businessRegistration: null,
     licensesAndPermits: null,
     accountStatement: null,
+    passport: null,
   });
 
-  // To be used later for submitting the form
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     const formDataJson = JSON.stringify(formData);
-
     const alertMessage = `Submitted form data: ${formDataJson}`;
-
     alert(alertMessage);
   };
 
@@ -50,17 +47,17 @@ export default function BusinessInvestorForm() {
 
       <div className="md:w-1/2">
         <form>
-          {step == 1 && (
+          {step === 1 && (
             <PageOne
               handleNext={handleNext}
               formData={formData}
-              setformData={setformData}
+              setFormData={setFormData}
             />
           )}
-          {step == 2 && (
+          {step === 2 && (
             <PageTwo
               formData={formData}
-              setformData={setformData}
+              setFormData={setFormData}
               handlePrevious={handlePrevious}
               handleSubmit={handleSubmit}
             />
