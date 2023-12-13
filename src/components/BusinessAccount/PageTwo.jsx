@@ -5,10 +5,10 @@ import Input from "./components/Input";
 import FileInput from "./components/FileInput";
 
 export default function PageTwo({
-  handleSubmit,
   handlePrevious,
   formData,
   setFormData,
+  handleSubmit,
 }) {
   const handleFileChange = (field) => (file) => {
     setFormData({ ...formData, [field]: file });

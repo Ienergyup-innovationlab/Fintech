@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const RangeSlider = ({ formData, setformData }) => {
+const RangeSlider = ({ formData, setFormData }) => {
   return (
     <div className="mt-10">
       <input
@@ -9,7 +9,7 @@ const RangeSlider = ({ formData, setformData }) => {
         max="100"
         value={formData.valueOfEquity}
         onChange={(e) => {
-          setformData({ ...formData, valueOfEquity: e.target.value });
+          setFormData({ ...formData, valueOfEquity: e.target.value });
         }}
         className="custom-range-slider rounded-full"
       />

@@ -26,6 +26,7 @@ export default function BusinessInvestorForm() {
     businessRegistration: null,
     licensesAndPermits: null,
     accountStatement: null,
+    passport: null,
   });
 
   const handleSubmit = () => {
@@ -46,13 +47,14 @@ export default function BusinessInvestorForm() {
 
       <div className="md:w-1/2">
         <form>
-          {step === 1 ? (
+          {step === 1 && (
             <PageOne
               handleNext={handleNext}
               formData={formData}
               setFormData={setFormData}
             />
-          ) : (
+          )}
+          {step === 2 && (
             <PageTwo
               formData={formData}
               setFormData={setFormData}

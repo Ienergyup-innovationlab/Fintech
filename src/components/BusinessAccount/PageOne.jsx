@@ -10,7 +10,7 @@ export default function PageOne({ handleNext, formData, setformData }) {
 
   return (
     <>
-      <h1 className="font-nanum text-center text-2xl font-bold mt-5 lg:mt-10 lg:text-2xl ">
+      <h1 className="font-nanum text-center text-2xl font-bold mt-5 lg:mt-7 lg:text-2xl ">
         Business Registration Form
       </h1>
       <div className="pl-7 lg:px-9">
