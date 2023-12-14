@@ -7,6 +7,8 @@ import SignUp from "./components/SignupPage/signUp";
 import InvestPref from "./components/InvestorPref/InvestmentPreference";
 import InvestorReg from "./components/InvestorReg/InvestorRegistration";
 import BusinessInvestorForm from "./components/BusinessAccount/BusinessInvestorForm";
+import VerificationDoc from "./components/VerificationDoc/verificationDocPage";
+import FinancialDoc from "./components/FinanceDoc/financialDocInvestor";
 function App() {
   return (
     <>
@@ -18,6 +20,8 @@ function App() {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/InvestmentPreference" element={<InvestPref />} />
         <Route path="/InvestorRegistration" element={<InvestorReg />} />
+        <Route path="/VerificationDocPage" element={<VerificationDoc />} />
+        <Route path="/FinancialDocInvestor" element={<FinancialDoc />} />
         <Route
           path="/BusinessRegistration"
           element={<BusinessInvestorForm />}

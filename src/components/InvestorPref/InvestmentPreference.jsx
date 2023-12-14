@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Progress } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 export const InvestmentPref = () => {
   const [Business, setBusinessType] = useState("Business Type");
@@ -27,18 +28,23 @@ export const InvestmentPref = () => {
               onChange={handleChange}
               className="py-4  border border-transparent rounded-lg w-full px-2 bg-grey mb-6"
             >
-              <option value=" ">Business Type</option>
               <option value="BusinessType">Business Type</option>
-              <option value="Business Type">Business Type</option>
+              <option value="BusinessType">Sole Proprietorship</option>
+              <option value="Business Type">Limited Liability Company</option>
+              <option value="BusinessType">Corporation</option>
+              <option value="Business Type">Others</option>
             </select>
             <select
               value={Business}
               onChange={handleChange}
               className="py-4  border border-transparent rounded-lg w-full px-2 bg-grey mb-4"
             >
-              <option value=" ">Investment Amount Range</option>
-              <option value="Business Type">Business Type</option>
-              <option value="Business Type">Business Type</option>
+              <option value="BusinessType">Investment Amount Range</option>
+              <option value="Business Type">#0- 100,000</option>
+              <option value="Business Type">#100,000- 500,000</option>
+              <option value="Business Type">#500,000- 1M</option>
+              <option value="Business Type">#1M- 5M</option>
+              <option value="Business Type">#5M- 10M</option>
             </select>
             <p className="text-2x1 pt-6 pb-4">Risk Tolerance</p>
             <Progress
@@ -103,7 +109,9 @@ export const InvestmentPref = () => {
                 type="submit"
                 className="p-4 inline-flex justify-center items-center rounded-lg border border-transparent bg-primary text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-base dark:focus:ring-offset-gray-800"
               >
+              <Link to="/verificationDocPage">
                 Next
+              </Link>
               </button>
             </section>
           </div>

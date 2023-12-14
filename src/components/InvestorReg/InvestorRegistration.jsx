@@ -4,9 +4,9 @@ export const InvestorReg = () => {
     <>
       <div className=" md:bg-sbg  min-h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center pb-20">
         <div className="grid-rows-1 investor-hero"></div>
-        <div className="grid-rows-1 mt-4" id="ellipse">
+        <div className="m-deskbg">
           <form>
-            <div className="pt-10">
+            <div className="pt-10 pr-6 pl-6">
               <div>
                 <h1 className="md:text-4xl  text-xl font-semibold md:text-black text-black font-poppins capitalize pb-4">
                   INVESTOR REGISTRATION 
@@ -45,7 +45,7 @@ export const InvestorReg = () => {
 
               <section className="w-full flex flex-col">
                 <input
-                  type="phone"
+                  type="tel"
                   id="phoneNum"
                   name="phone"
                   className="py-4  rounded-lg w-full px-2 bg-grey border border-transparent mb-10 text-black"
