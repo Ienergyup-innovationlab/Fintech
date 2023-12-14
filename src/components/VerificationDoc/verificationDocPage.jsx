@@ -3,40 +3,46 @@ import { Link } from "react-router-dom";
 export const VerificationDoc = () => {
   return (
     <>
-      <div className=" md:bg-sbg  min-h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center pb-20">
+      <div className="md:bg-sbg  min-h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center pb-20">
         <form>
             <div className="pt-10">
 
               <div>
-                <h1 className="block text-2xl font-semibold text-gray-800 mb-6 mt-6">
+                <h1 className="block text-2xl font-semibold text-gray-800 mb-6 mt-6 px-12">
                 Verification Documents <span className="text-red">*</span>
                 </h1>
               </div>
-              <section className="w-full flex flex-col">
+              <section className="w-full flex flex-col file-input bg-grey">
                 <input
                   type="file"
                   id="idcard"
                   name="identificationCard"
-                  className="py-4  rounded-lg w-full px-2 border border-transparent bg-grey mb-1 text-black"
+                  className="rounded-lg border border-transparent text-black"
                   required
                   aria-describedby="idCard-error"
-                  placeholder="Passport / Driver's License."
                 />
-                <small className="mb-8">Upload Pdf</small>
+                <span className='button'>Choose</span>
+                <span className='label' data-js-label>Passport / Driver's License. </span>
               </section>
+              <div className="mb-6">
+                <small>Upload Pdf</small>
+              </div>
 
-              <section className="w-full flex flex-col">
+              <section className="w-full flex flex-col file-input bg-grey">
                 <input
                   type="file"
                   id="utilityBill"
                   name="utility"
-                  className="py-4  rounded-lg w-full px-2 bg-grey border border-transparent mb-1 text-black"
+                  className="rounded-lg border border-transparent text-black"
                   required
                   aria-describedby="utilityBill-error"
-                  placeholder="Utility bills / Bank statements"
                 />
-                <small className="mb-8">Upload Pdf</small>
+                <span className='button'>Choose</span>
+                <span className='label' data-js-label>Utility bills / Bank Statements </span>
               </section>
+              <div className="mb-6">
+                <small>Upload Pdf</small>
+              </div>
 
               <div>
                 <h1 className="block text-2xl font-semibold text-gray-800 mb-4 mt-6">

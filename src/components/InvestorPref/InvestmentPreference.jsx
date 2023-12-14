@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 
 export const InvestmentPref = () => {
   const [Business, setBusinessType] = useState("Business Type");
+  const [Investment, setInvestmentAmount] = useState("Investment Amount Range");
 
   const handleChange = (event) => {
     setBusinessType(event.target.value);
+    setInvestmentAmount(event.target.value);
   };
+  
   return (
     <>
       <div className=" md:bg-sbg  min-h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center pb-20">
@@ -26,25 +29,25 @@ export const InvestmentPref = () => {
             <select
               value={Business}
               onChange={handleChange}
-              className="py-4  border border-transparent rounded-lg w-full px-2 bg-grey mb-6"
+              className="py-4 border border-transparent rounded-lg w-full px-2 bg-grey mb-6"
             >
-              <option value="BusinessType">Business Type</option>
-              <option value="BusinessType">Sole Proprietorship</option>
-              <option value="Business Type">Limited Liability Company</option>
-              <option value="BusinessType">Corporation</option>
-              <option value="Business Type">Others</option>
+              <option value="select">Business Type</option>
+              <option value="Business Type1">Sole Proprietorship</option>
+              <option value="Business Type2">Limited Liability Company</option>
+              <option value="Business Type3">Corporation</option>
+              <option value="Business Type4">Others</option>
             </select>
             <select
-              value={Business}
+              value={Investment}
               onChange={handleChange}
               className="py-4  border border-transparent rounded-lg w-full px-2 bg-grey mb-4"
             >
-              <option value="BusinessType">Investment Amount Range</option>
-              <option value="Business Type">#0- 100,000</option>
-              <option value="Business Type">#100,000- 500,000</option>
-              <option value="Business Type">#500,000- 1M</option>
-              <option value="Business Type">#1M- 5M</option>
-              <option value="Business Type">#5M- 10M</option>
+              <option value="select">Investment Amount Range</option>
+              <option value="1st Range">#0- 100,000</option>
+              <option value="2nd Range">#100,000- 500,000</option>
+              <option value="3rd Range">#500,000- 1M</option>
+              <option value="4th Range">#1M- 5M</option>
+              <option value="5th Range">#5M- 10M</option>
             </select>
             <p className="text-2x1 pt-6 pb-4">Risk Tolerance</p>
             <Progress
