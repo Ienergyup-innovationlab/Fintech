@@ -1,24 +1,19 @@
-// RangeSlider.js
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 
-const RangeSlider = () => {
-  const [sliderValue, setSliderValue] = useState(0);
-
-  const handleSliderChange = (e) => {
-    setSliderValue(e.target.value);
-  };
-
+const RangeSlider = ({ formData, setFormData }) => {
   return (
-    <div className=" mt-10">
+    <div className="mt-10">
       <input
         type="range"
         min="0"
         max="100"
-        value={sliderValue}
-        onChange={handleSliderChange}
+        value={formData.valueOfEquity}
+        onChange={(e) => {
+          setFormData({ ...formData, valueOfEquity: e.target.value });
+        }}
         className="custom-range-slider rounded-full"
       />
-      <span className="ml-3 text-lg">{sliderValue}</span>
+      <div className="text-lg">{formData.valueOfEquity}</div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import PageOne from "./PageOne";
 import PageTwo from "./PageTwo";
 
@@ -14,10 +13,26 @@ export default function BusinessInvestorForm() {
     setStep((prevStep) => prevStep - 1);
   };
 
-  // To be used later for submitting the form
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Submitted!!");
+  const [formData, setFormData] = useState({
+    businessName: "",
+    businessEmail: "",
+    businessPhoneNumber: "",
+    industrySector: "",
+    establishmentDate: "",
+    revenueProfit: null,
+    taxIdentificationNumber: "",
+    purposeOfInvestment: "",
+    valueOfEquity: 0,
+    businessRegistration: null,
+    licensesAndPermits: null,
+    accountStatement: null,
+    passport: null,
+  });
+
+  const handleSubmit = () => {
+    const formDataJson = JSON.stringify(formData);
+    const alertMessage = `Submitted form data: ${formDataJson}`;
+    alert(alertMessage);
   };
 
   return (
@@ -32,10 +47,17 @@ export default function BusinessInvestorForm() {
 
       <div className="md:w-1/2">
         <form>
-          {step == 1 && <PageOne handleNext={handleNext} />}
-          {step == 2 && (
-            <PageTwo
+          {step === 1 && (
+            <PageOne
               handleNext={handleNext}
+              formData={formData}
+              setFormData={setFormData}
+            />
+          )}
+          {step === 2 && (
+            <PageTwo
+              formData={formData}
+              setFormData={setFormData}
               handlePrevious={handlePrevious}
               handleSubmit={handleSubmit}
             />
