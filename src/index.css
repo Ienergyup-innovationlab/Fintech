@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .onboard1 {
   animation: fadeIn 1s ease-in-out forwards;
@@ -160,6 +162,45 @@ input {
   opacity: 1;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.badges > * {
+  margin-right: 8px;
+}
+.container {
+  padding: 16px;
+}
+
+.p-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+  width: 600px;
+}
+.hr-sect:before,
+.hr-sect:after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+
+.txtfield {
+  width: 400px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -187,5 +228,13 @@ input {
 
   .custom-range-slider {
     width: 600px;
+  }
+
+  .hr-sect {
+    width: 320px;
+  }
+
+  .txtfield {
+    width: 250px;
   }
 }

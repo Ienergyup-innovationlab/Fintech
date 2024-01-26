@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.14.18",
     "react": "^18.2.0",
+    "react-auth-code-input": "^3.2.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0"
   },
