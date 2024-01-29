@@ -24,5 +24,9 @@ export default {
       poppins: ["Poppins"],
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
+
+  mode: "jit",
 };
