@@ -34,7 +34,7 @@ const Authenticate = () => {
         console.log(`Verification successful`, response.data);
 
         // Redirect to verified email page if successful
-        navigateTo({ pathname: "/" });
+        navigateTo({ pathname: "/VerifiedPage" });
         } catch (error) {
         console.error(`Verification failed:`, error);
         }

@@ -10,6 +10,7 @@ import BusinessInvestorForm from "./components/BusinessAccount/BusinessInvestorF
 import VerificationDoc from "./components/VerificationDoc/verificationDocPage";
 import FinancialDoc from "./components/FinanceDoc/financialDocInvestor";
 import AuthenticationPage from "./components/AuthenticationPage/Authenticate";
+import AuthenticateVerify from "./components/AuthenticationPage/AuthenticationVerified";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/VerificationDocPage" element={<VerificationDoc />} />
         <Route path="/FinancialDocInvestor" element={<FinancialDoc />} />
         <Route path="/Authenticate" element={<AuthenticationPage />} />
+        <Route path="/VerifiedPage" element={<AuthenticateVerify />} />
         <Route
           path="/BusinessRegistration"
           element={<BusinessInvestorForm />}
