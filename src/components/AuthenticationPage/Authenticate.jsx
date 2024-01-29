@@ -1,10 +1,13 @@
 import qrcode from "../images/openmoji_qr-code.png";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// import { authApi } from "../api/authApi";
+import { Link } from "react-router-dom";
 
 const Authenticate = () => {
   
     const [copyText,setCopyText]=useState('')
+
     const handleCopy=()=>{
         navigator.clipboard.writeText(copyText)
         alert("copied")
@@ -47,7 +50,7 @@ const Authenticate = () => {
           <p className="text-xl text-black font-normal text-center mb-10 p-text">Set up two factor authentication</p>
           <p className="text-xl text-black font-normal text-center mb-10 p-text">Two-factor authentication protects your account by <br />
           requiring an additional code when you log in on a device <br />
-          we don't recognize. To set up Two factor authentication <br />
+          we dont recognize. To set up Two factor authentication <br />
           scan this QR Code in your authenticator or copy the key <br />
           and paste it in the authentication app.
           </p>
@@ -136,7 +139,9 @@ const Authenticate = () => {
                 type="button"
                 className="bg-primary px-4 md:px-0 py-4 md:py-4 text-white font-semibold rounded-md md:rounded-[10px] txtfield self-center my-10"
             >
+              <Link to="/VerifiedPage">
                 Sign Up
+              </Link>
             </button>
         </div>
     );
