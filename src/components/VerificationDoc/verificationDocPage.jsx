@@ -44,7 +44,7 @@ export const VerificationDoc = () => {
                 <small>Upload Pdf</small>
               </div>
 
-              <div>
+              {/* <div>
                 <h1 className="block text-2xl font-semibold text-gray-800 mb-4 mt-6">
                     Bank Information <span className="text-red">*</span>
                 </h1>
@@ -108,7 +108,7 @@ export const VerificationDoc = () => {
                     <label htmlFor="checkbox"></label>
                 </div>
                 <span className="sp-text text-lg md:text-base">Agree with <a href="/" className="text-primary">Terms & Condition</a></span>
-              </section>
+              </section> */}
 
               <section className="w-full flex flex-col mt-12">
                 <button
@@ -116,7 +116,7 @@ export const VerificationDoc = () => {
                   className="p-4 inline-flex justify-center items-center rounded-lg border border-transparent bg-primary text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-base dark:focus:ring-offset-gray-800"
                 >
                 <Link to="/financialDocInvestor">
-                  Sign In
+                  Next
                 </Link>
                 </button>
               </section>

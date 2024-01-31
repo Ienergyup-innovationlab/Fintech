@@ -48,6 +48,7 @@ export const InvestmentPref = () => {
               <option value="3rd Range">#500,000- 1M</option>
               <option value="4th Range">#1M- 5M</option>
               <option value="5th Range">#5M- 10M</option>
+              <option value="5th Range">#10M- 100M</option>
             </select>
             <p className="text-2x1 pt-6 pb-4">Risk Tolerance</p>
             <Progress

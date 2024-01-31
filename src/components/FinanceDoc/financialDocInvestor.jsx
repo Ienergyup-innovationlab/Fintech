@@ -34,7 +34,7 @@ export const FinancialDoc = () => {
                   id="utilityBill"
                   name="utility"
                   className="rounded-lg border border-transparent text-black"
-                  required
+                  
                   aria-describedby="utilityBill-error"
                 />
                 <span className='button'>Choose</span>
@@ -50,7 +50,7 @@ export const FinancialDoc = () => {
                   id="licencePermits"
                   name="licenceP"
                   className="rounded-lg border border-transparent text-black"
-                  required
+                
                   aria-describedby="licencePermits-error"
                 />
                 <span className='button'>Choose</span>
@@ -63,26 +63,10 @@ export const FinancialDoc = () => {
               <section className="w-full flex flex-col file-input bg-grey">
                 <input
                   type="file"
-                  id="accountStatement"
-                  name="accountState"
-                  className="rounded-lg border border-transparent text-black"
-                  required
-                  aria-describedby="accountStatement-error"
-                />
-                <span className='button'>Choose</span>
-                <span className='label' data-js-label>Account Statement</span>
-              </section>
-              <div className="mb-6">
-                <small>Upload Pdf</small>
-              </div>
-
-              <section className="w-full flex flex-col file-input bg-grey">
-                <input
-                  type="file"
                   id="articleAssociation"
                   name="articleAss"
                   className="rounded-lg border border-transparent text-black"
-                  required
+        
                   aria-describedby="articleAssociation-error"
                 />
                 <span className='button'>Choose</span>
@@ -98,7 +82,6 @@ export const FinancialDoc = () => {
                   id="shareHolderAgree"
                   name="shareHolder"
                   className="rounded-lg border border-transparent text-black"
-                  required
                   aria-describedby="shareHolderAgree-error"
                 />
                 <span className='button'>Choose</span>
@@ -114,7 +97,6 @@ export const FinancialDoc = () => {
                   id="kiidDetails"
                   name="kiid"
                   className="rounded-lg border border-transparent text-black"
-                  required
                   aria-describedby="kiidDetails-error"
                 />
                 <span className='button'>Choose</span>
@@ -129,7 +111,7 @@ export const FinancialDoc = () => {
                   type="submit"
                   className="p-4 inline-flex justify-center items-center rounded-lg border border-transparent bg-primary text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-base dark:focus:ring-offset-gray-800"
                 >
-                <Link to="/">
+                <Link to="/Authenticate">
                   Submit
                 </Link>
                 </button>
