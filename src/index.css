@@ -23,6 +23,14 @@
   margin-top: -4px;
 }
 
+.src-bg {
+  background-color: #805DB34D;
+}
+
+.src-text {
+  color: #fff!important;
+}
+
 .custom-range-slider:hover {
   opacity: 1;
 }
@@ -71,6 +79,34 @@ input {
 
 .round {
   position: relative;
+}
+
+.icon-align {
+  text-align: center;
+}
+
+.topnav-div { 
+  background: #000000;
+  color: #ffffff;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.user-txt {
+  float: left;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.detcard {
+  height: 350px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+.user-img {
+  float: left;
 }
 
 .round label {
@@ -205,6 +241,23 @@ input {
   width: 400px;
 }
 
+.p-12row {
+  padding: 3rem!important;
+}
+
+.debt-row {
+  margin-right: 3rem!important;
+}
+
+.pd-left {
+  padding-left: 4rem!important;
+}
+
+.pd-btm {
+  margin-bottom: -60px;
+}
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -213,6 +266,7 @@ input {
     opacity: 1;
   }
 }
+
 
 @media screen and (min-width: 300px) {
   .custom-range-slider {
@@ -240,5 +294,23 @@ input {
 
   .txtfield {
     width: 250px;
+  }
+
+  .detcard {
+    height: 220px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .p-12row {
+    padding: 0.75rem!important;
+  }
+  
+  .debt-row {
+    margin-right: 0rem!important;
+  }
+
+  .pd-left {
+    padding-left: 0rem!important;
   }
 }
