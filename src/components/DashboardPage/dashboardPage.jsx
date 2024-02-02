@@ -2,6 +2,7 @@ import NavbarDash from "./NavbarDashboard";
 import Footer from "../Footer";
 import UserImg from "../images/user-img.png";
 import DebtCard from "../images/card.png";
+import FarmtechImg from "../images/farmtech-img.png";
 
 
 
@@ -21,6 +22,31 @@ const DashboardPage = () => {
                 </div>
                 <div className="mt-6 py-8 debt-row">
                     <img src={DebtCard} alt="" className="detcard" />
+                </div>
+                <div className="font-semibold text-lg">
+                    <div className="flex items-center justify-between gap-4 mt-16">
+                        <div className="font-bold text-lg">
+                            <img src={FarmtechImg} alt="" /><br />
+                            Send
+                        </div>
+                        <div className="font-semibold text-lg">
+                            <img src={FarmtechImg} alt="" /><br />
+                            Withdraw
+                        </div>
+                        <div className="font-semibold text-lg">
+                            <img src={FarmtechImg} alt="" /><br />
+                            Airtime
+                        </div>
+                        <div className="font-semibold text-lg">
+                            <img src={FarmtechImg} alt="" /><br />
+                            Pay Bills
+                        </div>
+                        <div className="font-semibold text-lg">
+                            <img src={FarmtechImg} alt="" /><br />
+                            Multiple Cards
+                        </div>
+                       
+                    </div>
                 </div>
             </div>
             <div className="w-full md:w-1/4 pt-12">
@@ -51,11 +77,92 @@ const DashboardPage = () => {
                 </form>
                   
                 <section className="font-semibold text-lg">
-                    Investment Listings
+                    <div className="flex items-center justify-between gap-1 mt-16">
+                        <div className="font-bold text-lg">
+                            <img src={FarmtechImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-1 mt-12">
+                        <div className="font-bold text-lg">
+                            <img src={FarmtechImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-1 mt-12">
+                        <div className="font-bold text-lg">
+                            <img src={FarmtechImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-1 mt-12">
+                        <div className="font-bold text-lg">
+                            <img src={FarmtechImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-1 mt-12">
+                        <div className="font-bold text-lg">
+                            <img src={FarmtechImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-1 mt-12">
+                        <div className="font-bold text-lg">
+                            <img src={FarmtechImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
                 </section>
-                <section className="font-semibold text-lg">
-                    Investment Listings
-                </section>
+                
             </div>
         </div>
         <Footer />
