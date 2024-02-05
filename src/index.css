@@ -105,6 +105,13 @@ input {
   max-width: 800px;
   text-align: center;
 }
+
+.detcardbtm {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
 .user-img {
   float: left;
 }
@@ -318,5 +325,10 @@ input {
 
   .pd-left {
     padding-left: 0rem!important;
+  }
+
+  .detcardbtm {
+    width: 100%;
+    text-align: center;
   }
 }

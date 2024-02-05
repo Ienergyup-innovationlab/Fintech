@@ -3,6 +3,16 @@ import Footer from "../Footer";
 import UserImg from "../images/user-img.png";
 import DebtCard from "../images/card.png";
 import FarmtechImg from "../images/farmtech-img.png";
+import NinoSpaImg from "../images/nino-spa.png";
+import TelcoImg from "../images/telco.png";
+import OgapoutryImg from "../images/ogapoutry.png";
+import NinoSpaaTwoImg from "../images/nino-spa-two.png";
+import NuttyImg from "../images/nutty.png";
+import SendIcon from "../images/sendicon.png";
+import WithdrawIcon from "../images/withdraw-icon.png";
+import AirtimeIcon from "../images/airtime-icon.png";
+import PaybillIcon from "../images/paybill-icon.png";
+import MultiCardIcon from "../images/multicard-icon.png";
 
 
 
@@ -23,26 +33,26 @@ const DashboardPage = () => {
                 <div className="mt-6 py-8 debt-row">
                     <img src={DebtCard} alt="" className="detcard" />
                 </div>
-                <div className="font-semibold text-lg">
+                <div className="font-semibold text-lg detcardbtm">
                     <div className="flex items-center justify-between gap-4 mt-16">
-                        <div className="font-bold text-lg">
-                            <img src={FarmtechImg} alt="" /><br />
+                        <div className="font-semibold text-lg">
+                            <img src={SendIcon} alt="" className="" /><br />
                             Send
                         </div>
                         <div className="font-semibold text-lg">
-                            <img src={FarmtechImg} alt="" /><br />
+                            <img src={WithdrawIcon} alt="" className="pl-1" /><br />
                             Withdraw
                         </div>
                         <div className="font-semibold text-lg">
-                            <img src={FarmtechImg} alt="" /><br />
+                            <img src={AirtimeIcon} alt="" className="" /><br />
                             Airtime
                         </div>
                         <div className="font-semibold text-lg">
-                            <img src={FarmtechImg} alt="" /><br />
+                            <img src={PaybillIcon} alt="" className="" /><br />
                             Pay Bills
                         </div>
                         <div className="font-semibold text-lg">
-                            <img src={FarmtechImg} alt="" /><br />
+                            <img src={MultiCardIcon} alt="" className="pl-5" /><br />
                             Multiple Cards
                         </div>
                        
@@ -93,24 +103,10 @@ const DashboardPage = () => {
                     </div>
                     <div className="flex items-center justify-between gap-1 mt-12">
                         <div className="font-bold text-lg">
-                            <img src={FarmtechImg} alt="" />
+                            <img src={NinoSpaImg} alt="" />
                         </div>
                         <div className="font-semibold text-lg">
-                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
-                        </div>
-                        <div className="font-semibold text-lg">
-                        <button type="button" 
-                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Invest
-                        </button>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-between gap-1 mt-12">
-                        <div className="font-bold text-lg">
-                            <img src={FarmtechImg} alt="" />
-                        </div>
-                        <div className="font-semibold text-lg">
-                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                            Nina Spa and Salons <br /><small className="sml-txt">We offer salon and spa services</small>
                         </div>
                         <div className="font-semibold text-lg">
                         <button type="button" 
@@ -121,24 +117,10 @@ const DashboardPage = () => {
                     </div>
                     <div className="flex items-center justify-between gap-1 mt-12">
                         <div className="font-bold text-lg">
-                            <img src={FarmtechImg} alt="" />
+                            <img src={TelcoImg} alt="" />
                         </div>
                         <div className="font-semibold text-lg">
-                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
-                        </div>
-                        <div className="font-semibold text-lg">
-                        <button type="button" 
-                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Invest
-                        </button>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-between gap-1 mt-12">
-                        <div className="font-bold text-lg">
-                            <img src={FarmtechImg} alt="" />
-                        </div>
-                        <div className="font-semibold text-lg">
-                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                            Telco Communications <br /><small className="sml-txt">Dealers in all kind of phones <br />and gadgets</small>
                         </div>
                         <div className="font-semibold text-lg">
                         <button type="button" 
@@ -149,10 +131,38 @@ const DashboardPage = () => {
                     </div>
                     <div className="flex items-center justify-between gap-1 mt-12">
                         <div className="font-bold text-lg">
-                            <img src={FarmtechImg} alt="" />
+                            <img src={OgapoutryImg} alt="" />
                         </div>
                         <div className="font-semibold text-lg">
-                            Farmtech <br /><small className="sml-txt">Farmtek is an agro-tech business</small>
+                            Oge Poultry <br /><small className="sml-txt">We sell chickens and feed  </small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-1 mt-12">
+                        <div className="font-bold text-lg">
+                            <img src={NinoSpaaTwoImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Nina Spa and Salons <br /><small className="sml-txt">We offer salon and spa services</small>
+                        </div>
+                        <div className="font-semibold text-lg">
+                        <button type="button" 
+                            className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Invest
+                        </button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-1 mt-12">
+                        <div className="font-bold text-lg">
+                            <img src={NuttyImg} alt="" />
+                        </div>
+                        <div className="font-semibold text-lg">
+                            Nutty’s and more <br /><small className="sml-txt">We sell all kind of nuts <br />like groundnut, cashew nut, etc</small>
                         </div>
                         <div className="font-semibold text-lg">
                         <button type="button" 
