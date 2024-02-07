@@ -1,7 +1,7 @@
 import NavbarDash from "./NavbarDashboard";
 import Footer from "../Footer";
 import UserImg from "../images/user-img.png";
-import DebtCard from "../images/card.png";
+import Mastercard from "../images/mastercard-logo.png";
 import FarmtechImg from "../images/farmtech-img.png";
 import NinoSpaImg from "../images/nino-spa.png";
 import TelcoImg from "../images/telco.png";
@@ -13,6 +13,7 @@ import WithdrawIcon from "../images/withdraw-icon.png";
 import AirtimeIcon from "../images/airtime-icon.png";
 import PaybillIcon from "../images/paybill-icon.png";
 import MultiCardIcon from "../images/multicard-icon.png";
+import EyeIcon from "../images/eyeicon.png";
 
 
 
@@ -21,46 +22,66 @@ const DashboardPage = () => {
       <>
         <NavbarDash />
         <div className="flex flex-wrap flex-row mt-24 p-12row"> 
-            <div className="grid w-full md:w-3/4 pt-12 pd-left flex">
-                <div>
+            <div className="grid w-full md:w-3/4 tab-width pt-12 pd-left flex">
+                <div className="hello-botom">
                     <div className="user-img">
                         <img src={UserImg} alt="" />
                     </div>
                     <div className="user-txt">
-                        <h3>Hello Steve</h3>
+                        <h3 className="text-[22px]">Hello Steve</h3>
                     </div>
                 </div>
-                <div className="mt-6 py-8 debt-row">
-                    <img src={DebtCard} alt="" className="detcard" />
+                <div className="mt-6 py-4 debt-row bg-primary rounded-[16px]">
+                    <div className="card-txt flex gap-2">
+                        <h3>Available Balance </h3>
+                        <div className="">
+                            <img src={EyeIcon} alt="" />
+                        </div>
+                    </div>
+                    <div className="mt-6 px-12">
+                        <div className="card-amunt">
+                            ₦1,200,000.00
+                        
+                            <div className="font-semibold text-lg float-right">
+                                <button type="button" 
+                                    className="px-10 py-5 text-sm font-medium text-center text-primary bg-white rounded-lg hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    + Add Money
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="mt-16 py-4 px-12">
+                        <img src={Mastercard} alt="" className="float-right" />
+                    </div>
                 </div>
                 <div className="font-semibold text-lg detcardbtm">
                     <div className="flex items-center justify-between gap-4 mt-16">
-                        <div className="font-semibold text-lg">
-                            <img src={SendIcon} alt="" className="" /><br />
+                        <div className="font-semibold text-lg sm-txt">
+                            <img src={SendIcon} alt=""  className="sm-img" /><br />
                             Send
                         </div>
-                        <div className="font-semibold text-lg">
-                            <img src={WithdrawIcon} alt="" className="pl-1" /><br />
+                        <div className="font-semibold text-lg sm-txt">
+                            <img src={WithdrawIcon} alt="" className="pl-1 sm-img" /><br />
                             Withdraw
                         </div>
-                        <div className="font-semibold text-lg">
-                            <img src={AirtimeIcon} alt="" className="" /><br />
+                        <div className="font-semibold text-lg sm-txt">
+                            <img src={AirtimeIcon} alt=""  className="sm-img" /><br />
                             Airtime
                         </div>
-                        <div className="font-semibold text-lg">
-                            <img src={PaybillIcon} alt="" className="" /><br />
+                        <div className="font-semibold text-lg sm-txt">
+                            <img src={PaybillIcon} alt=""  className="sm-img" /><br />
                             Pay Bills
                         </div>
-                        <div className="font-semibold text-lg">
-                            <img src={MultiCardIcon} alt="" className="pl-5" /><br />
+                        <div className="font-semibold text-lg sm-txt">
+                            <img src={MultiCardIcon} alt="" className="pl-3 sm-imges" /><br />
                             Multiple Cards
                         </div>
                        
                     </div>
                 </div>
             </div>
-            <div className="w-full md:w-1/4 pt-12">
-                
+            <div className="w-full md:w-1/4 tab-width pt-12">
+                <h3 className="text-[22px] font-semibold">Investment Listings</h3>
                 <form action="/">
                     <section className="font-semibold text-lg pt-6">
                         <input 
@@ -70,7 +91,7 @@ const DashboardPage = () => {
                         className="w-full border h-12 shadow p-4 rounded-full src-bg src-text"
                         required
                         aria-describedby="SearchBar"
-                        placeholder="Search"
+                        placeholder=" &#xF002; Search"
                         />
                         
                         <button type="submit">

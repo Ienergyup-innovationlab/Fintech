@@ -35,7 +35,7 @@ const Navbar = () => {
           isSticky ? "sticky top-0 right-0 left-0 bg-primary " : ""
         }`}
       >
-        <div className="flex items-center justify-between md:pl-12">
+        <div className="flex items-center justify-between md:pl-12 tab-pleft">
           <div className="text-white font-bold text-lg cursor-pointer pt-8">
             <img src={logo} alt="" className="h-20" />
           </div>

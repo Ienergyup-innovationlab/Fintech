@@ -99,6 +99,18 @@ input {
   padding-top: 20px;
 }
 
+.card-txt {
+  padding: 20px 50px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.card-amunt {
+  line-height: 72px;
+  color: #fff;
+  font-size: 48px;
+}
+
 .detcard {
   height: 450px;
   width: 100%;
@@ -254,12 +266,16 @@ input {
   width: 400px;
 }
 
+.hello-botom {
+  margin-bottom: -10px;
+}
+
 .p-12row {
   padding: 3rem!important;
 }
 
 .debt-row {
-  margin-right: 3rem!important;
+  margin-right: 17rem!important;
 }
 
 .pd-left {
@@ -285,9 +301,10 @@ input {
   .custom-range-slider {
     width: 345px;
   }
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .investor-hero {
     display: block!important;
   }
@@ -320,7 +337,7 @@ input {
   }
   
   .debt-row {
-    margin-right: 0rem!important;
+    margin-right: 0.75rem!important;
   }
 
   .pd-left {
@@ -330,5 +347,38 @@ input {
   .detcardbtm {
     width: 100%;
     text-align: center;
+  }
+
+  .sm-img {
+    max-width: 50px!important;
+  }
+
+  .sm-imges {
+    max-width: 60px!important;
+  }
+
+  .sm-txt {
+    font-size: 13px;
+  }
+
+  .hello-botom {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1200px){
+  .tab-width {
+    width: 100%!important;
+  }
+
+  .tab-pleft {
+    padding-left: 10px!important;
+  }
+
+  .hello-botom {
+    margin-bottom: 0px;
+  }
+  .debt-row {
+    margin-right: 0.75rem!important;
   }
 }
