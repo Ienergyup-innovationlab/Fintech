@@ -10,6 +10,8 @@ import BusinessInvestorForm from "./components/BusinessAccount/BusinessInvestorF
 import VerificationDoc from "./components/VerificationDoc/verificationDocPage";
 import FinancialDoc from "./components/FinanceDoc/financialDocInvestor";
 import Profilenotupdated from "./components/ProfileUpdate/Profilenotupdated";
+import FarmTech from "./components/FarmTech/FarmTech";
+import EditPage from "./components/FarmTech/EditPage";
 
 
 
@@ -29,6 +31,8 @@ function App() {
         <Route path="/FinancialDocInvestor" element={<FinancialDoc />} />
         <Route path="/BusinessRegistration" element={<BusinessInvestorForm />} />
         <Route path="/ProfileUpdate" element={<Profilenotupdated />}  />
+        <Route path="/FarmTech" element={<FarmTech />}  />
+        <Route path="/EditPage" element={<EditPage />}  />
       </Routes>
     </>
   );

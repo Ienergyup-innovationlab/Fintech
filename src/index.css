@@ -160,6 +160,14 @@ input {
   opacity: 1;
 }
 
+.bar{
+
+}
+
+.thumb{
+  
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
