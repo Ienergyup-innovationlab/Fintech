@@ -94,25 +94,25 @@ const SendmoneyPage = () => {
                                     <table className="w-full divide-y divide-green-400">
                                         <thead className="w-full bg-gray-50">
                                             <tr>
-                                                <th className="pr-20 pl-4 py-2 text-xs text-gray-500">
+                                                <th className="px-[109px] py-2 text-xs text-gray-500">
                                                     Reference
                                                 </th>
-                                                <th className="pr-20 pl-4 py-2 text-xs text-gray-500">
+                                                <th className="px-[109px] py-2 text-xs text-gray-500">
                                                     Date
                                                 </th>
-                                                <th className="pr-20 pl-4 py-2 text-xs text-gray-500">
+                                                <th className="px-[109px] py-2 text-xs text-gray-500">
                                                     Name
                                                 </th>
-                                                <th className="pr-20 pl-4 py-2 text-xs text-gray-500">
-                                                    <img src={BankLogo} alt="" /> Bank
+                                                <th className="px-[109px] py-2 text-xs text-gray-500">
+                                                    Bank
                                                 </th>
-                                                <th className="pr-20 pl-4 py-2 text-xs text-gray-500">
+                                                <th className="px-[109px] py-2 text-xs text-gray-500">
                                                     Status
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody className="bg-white divide-y divide-gray-300">
-                                            <tr>
+                                            <tr className="text-center">
                                                 <td className="px-6 py-4 text-sm text-blue-600">
                                                     #FA201
                                                 </td>
@@ -124,8 +124,8 @@ const SendmoneyPage = () => {
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm text-gray-500">Williams Ibe</div>
                                                 </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
-                                                    Union Bank
+                                                <td className="px-6 py-4 text-sm text-gray-500 flex">
+                                                    <img src={BankLogo} alt="" className="mr-2"/> Union Bank
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
@@ -134,7 +134,7 @@ const SendmoneyPage = () => {
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className="text-center">
                                                 <td className="px-6 py-4 text-sm text-blue-600">
                                                     #FA202
                                                 </td>
@@ -146,8 +146,8 @@ const SendmoneyPage = () => {
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm text-gray-500">Williams Ibe</div>
                                                 </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
-                                                    Union Bank
+                                                <td className="px-6 py-4 text-sm text-gray-500 flex">
+                                                <img src={BankLogo} alt="" className="mr-2"/> Union Bank
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
@@ -156,7 +156,7 @@ const SendmoneyPage = () => {
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className="text-center">
                                                 <td className="px-6 py-4 text-sm text-blue-600">
                                                     #FA203
                                                 </td>
@@ -168,8 +168,8 @@ const SendmoneyPage = () => {
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm text-gray-500">Williams Ibe</div>
                                                 </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
-                                                    Union Bank
+                                                <td className="px-6 py-4 text-sm text-gray-500 flex">
+                                                    <img src={BankLogo} alt="" className="mr-2"/> Union Bank
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
@@ -178,7 +178,7 @@ const SendmoneyPage = () => {
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className="text-center">
                                                 <td className="px-6 py-4 text-sm text-blue-600">
                                                     #FA204
                                                 </td>
@@ -190,8 +190,8 @@ const SendmoneyPage = () => {
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm text-gray-500">Williams Ibe</div>
                                                 </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
-                                                    Union Bank
+                                                <td className="px-6 py-4 text-sm text-gray-500 flex">
+                                                    <img src={BankLogo} alt="" className="mr-2"/> Union Bank
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
@@ -200,7 +200,7 @@ const SendmoneyPage = () => {
                                                     </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className="text-center">
                                                 <td className="px-6 py-4 text-sm text-blue-600">
                                                     #FA204
                                                 </td>
@@ -212,8 +212,8 @@ const SendmoneyPage = () => {
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm text-gray-500">Williams Ibe</div>
                                                 </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
-                                                    Union Bank
+                                                <td className="px-6 py-4 text-sm text-gray-500 flex">
+                                                    <img src={BankLogo} alt="" className="mr-2"/> Union Bank
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
