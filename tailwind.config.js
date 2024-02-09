@@ -15,6 +15,12 @@ export default {
         black: "#000000",
         brickRed: "#D63A3A",
         inputGrey: "#F7F7F7",
+        lightpurple: "#F9F4FF",
+        lightgrey: "#DFD4EF",
+        success: "#E0FFE1",
+        fail: "#FFEBEE",
+        successtext: "#1A7A1E",
+        failtext: "#E92E4F",
       },
     },
     fontFamily: {

@@ -364,6 +364,11 @@ input {
   .hello-botom {
     margin-bottom: 0px;
   }
+
+  .pd-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media screen and (min-width: 760px) and (max-width: 1200px){

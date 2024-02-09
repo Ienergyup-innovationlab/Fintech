@@ -1,4 +1,5 @@
 import iconVerify from "../images/icon-verify.png";
+import { Link } from "react-router-dom";
 
 const AuthenticateVerify = () => {
 
@@ -16,7 +17,9 @@ const AuthenticateVerify = () => {
                 type="button"
                 className="bg-primary px-4 md:px-0 py-4 md:py-4 text-white font-semibold rounded-md md:rounded-[10px] txtfield self-center"
             >
+              <Link to="/DashboardPage">
                 Done
+              </Link>
             </button>
         </div>
     );
