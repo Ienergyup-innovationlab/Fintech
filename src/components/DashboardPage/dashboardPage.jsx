@@ -15,6 +15,7 @@ import PaybillIcon from "../images/paybill-icon.png";
 import MultiCardIcon from "../images/multicard-icon.png";
 import EyeIcon from "../images/eyeicon.png";
 import SubmitButton from "../images/submit-button.png";
+import { Link } from "react-router-dom";
 
 
 const DashboardPage = () => {
@@ -57,8 +58,10 @@ const DashboardPage = () => {
                 <div className="font-semibold text-lg detcardbtm">
                     <div className="flex items-center justify-between gap-4 mt-16">
                         <div className="font-semibold text-lg sm-txt">
-                            <img src={SendIcon} alt=""  className="sm-img" /><br />
-                            Send
+                            <Link to="/SendMoneyPage">
+                                <img src={SendIcon} alt=""  className="sm-img" /><br />
+                                Send
+                            </Link>
                         </div>
                         <div className="font-semibold text-lg sm-txt">
                             <img src={WithdrawIcon} alt="" className="pl-1 sm-img" /><br />

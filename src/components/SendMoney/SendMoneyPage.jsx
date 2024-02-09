@@ -1,6 +1,7 @@
 import ArrowBack from "../images/arrow-back.png";
 import { useState } from "react";
 import BankLogo from "../images/bank-logo.png";
+import { Link } from "react-router-dom";
 
 
 const SendmoneyPage = () => {
@@ -15,7 +16,9 @@ const SendmoneyPage = () => {
          <div className="mt-12 px-20 pd-mobile">
             <div className="w-1/2 justify-between flex">
                 <div className="text-primary">
-                    <img src={ArrowBack} alt="" />
+                    <Link to="/DashboardPage">
+                        <img src={ArrowBack} alt="" />
+                    </Link>
                 </div>
                 <div className="text-primary">
                     <h3 className="text-[30px] font-bold">Send money</h3>
