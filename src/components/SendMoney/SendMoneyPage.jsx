@@ -97,19 +97,19 @@ const SendmoneyPage = () => {
                                     <table className="w-full divide-y divide-green-400">
                                         <thead className="w-full bg-gray-50">
                                             <tr>
-                                                <th className="px-[109px] py-2 text-xs text-gray-500">
+                                                <th className="px-[112px] py-4 text-[16px] text-gray-500">
                                                     Reference
                                                 </th>
-                                                <th className="px-[109px] py-2 text-xs text-gray-500">
+                                                <th className="px-[112px] py-4 text-[16px] text-gray-500">
                                                     Date
                                                 </th>
-                                                <th className="px-[109px] py-2 text-xs text-gray-500">
+                                                <th className="px-[112px] py-4 text-[16px] text-gray-500">
                                                     Name
                                                 </th>
-                                                <th className="px-[109px] py-2 text-xs text-gray-500">
+                                                <th className="px-[112px] py-4 text-[16px] text-gray-500">
                                                     Bank
                                                 </th>
-                                                <th className="px-[109px] py-2 text-xs text-gray-500">
+                                                <th className="px-[112px] py-4 text-[16px] text-gray-500">
                                                     Status
                                                 </th>
                                             </tr>
@@ -132,7 +132,7 @@ const SendmoneyPage = () => {
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
-                                                        className="px-4 py-2 text-sm font-medium text-center text-successtext bg-success hover:bg-blue-800">
+                                                        className="px-4 py-2 text-sm font-medium text-center text-successtext bg-success hover:bg-lightpurple">
                                                         Done
                                                     </button>
                                                 </td>
@@ -154,7 +154,7 @@ const SendmoneyPage = () => {
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
-                                                        className="px-4 py-2 text-sm font-medium text-center text-successtext bg-success hover:bg-blue-800">
+                                                        className="px-4 py-2 text-sm font-medium text-center text-successtext bg-success hover:bg-lightpurple">
                                                         Done
                                                     </button>
                                                 </td>
@@ -176,7 +176,7 @@ const SendmoneyPage = () => {
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
-                                                        className="px-6 py-2 text-sm font-medium text-center text-failtext bg-fail hover:bg-blue-800">
+                                                        className="px-6 py-2 text-sm font-medium text-center text-failtext bg-fail hover:bg-lightpurple">
                                                         Fail
                                                     </button>
                                                 </td>
@@ -198,7 +198,7 @@ const SendmoneyPage = () => {
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
-                                                        className="px-4 py-2 text-sm font-medium text-center text-successtext bg-success hover:bg-blue-800">
+                                                        className="px-4 py-2 text-sm font-medium text-center text-successtext bg-success hover:bg-lightpurple">
                                                         Done
                                                     </button>
                                                 </td>
@@ -220,7 +220,7 @@ const SendmoneyPage = () => {
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button type="button" 
-                                                        className="px-6 py-2 text-sm font-medium text-center text-failtext bg-fail hover:bg-blue-800">
+                                                        className="px-6 py-2 text-sm font-medium text-center text-failtext bg-fail hover:bg-lightpurple">
                                                         fail
                                                     </button>
                                                 </td>
