@@ -13,6 +13,7 @@ import AuthenticationPage from "./components/AuthenticationPage/Authenticate";
 import AuthenticateVerify from "./components/AuthenticationPage/AuthenticationVerified";
 import Dashboard from "./components/DashboardPage/dashboardPage";
 import SendmoneyPage from "./components/SendMoney/SendMoneyPage";
+import SendDetailsPage from "./components/SendDetails/SendDetailsPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/VerifiedPage" element={<AuthenticateVerify />} />
         <Route path="/DashboardPage" element={<Dashboard />} />
         <Route path="/SendMoneyPage" element={<SendmoneyPage />} />
+        <Route path="/SendDetailsPage" element={<SendDetailsPage />} />
         <Route
           path="/BusinessRegistration"
           element={<BusinessInvestorForm />}

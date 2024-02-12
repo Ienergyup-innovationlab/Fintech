@@ -46,6 +46,18 @@ const SendmoneyPage = () => {
                         <form>
                             <section className="w-full">
                                 <input
+                                    type="number"
+                                    name="price"
+                                    step=".01"
+                                    id="amount"
+                                    className="py-4 rounded-[16px] w-full px-6 border-2 border-gray bg-white mb-6 text-gray"
+                                    required
+                                    aria-describedby="Enter The Amount"
+                                    placeholder="Enter The Amount"
+                                />
+                            </section>
+                            <section className="w-full">
+                                <input
                                     type="text"
                                     id="netWort"
                                     name="netWort"
@@ -80,7 +92,9 @@ const SendmoneyPage = () => {
                             <div className="font-semibold text-lg text-center">
                                 <button type="button" 
                                     className="px-20 py-5 text-lg font-medium text-center text-white bg-primary rounded-[50px] hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Next
+                                    <Link to="/SendDetailsPage">
+                                        Next
+                                    </Link>
                                 </button>
                             </div>
                         </form>
