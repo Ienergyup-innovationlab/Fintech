@@ -32,7 +32,7 @@ const SendmoneyPage = () => {
                         </div>
                         <div className="mt-6">
                             <div className="card-amunt font-bold">
-                                $200.00
+                                ₦1,200,000.00
                             </div>
                             <div className="font-semibold text-lg mt-8">
                                 <button type="button" 

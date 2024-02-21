@@ -14,6 +14,7 @@ import AuthenticateVerify from "./components/AuthenticationPage/AuthenticationVe
 import Dashboard from "./components/DashboardPage/dashboardPage";
 import SendmoneyPage from "./components/SendMoney/SendMoneyPage";
 import SendDetailsPage from "./components/SendDetails/SendDetailsPage";
+import SuccessPage from "./components/Successful/successPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/DashboardPage" element={<Dashboard />} />
         <Route path="/SendMoneyPage" element={<SendmoneyPage />} />
         <Route path="/SendDetailsPage" element={<SendDetailsPage />} />
+        <Route path="/SuccessPage" element={<SuccessPage />} />
         <Route
           path="/BusinessRegistration"
           element={<BusinessInvestorForm />}
