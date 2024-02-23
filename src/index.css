@@ -52,7 +52,7 @@
   width: 100%;
   height: 430px;
   z-index: 1000;
-  display: none!important;
+  display: none !important;
 }
 
 textarea,
@@ -64,7 +64,7 @@ input {
 }
 
 .m-deskbg {
-  margin-top: 50px!important;
+  margin-top: 50px !important;
 }
 
 .round {
@@ -124,7 +124,7 @@ input {
   border-radius: 10px;
 }
 
-.file-input > [type='file'] {
+.file-input > [type="file"] {
   position: absolute;
   top: 0;
   left: 0;
@@ -153,19 +153,18 @@ input {
 .file-input > .label {
   color: #333;
   white-space: nowrap;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .file-input.-chosen > .label {
   opacity: 1;
 }
 
-.bar{
-
+.inputpg {
+  height: calc(100% - 245px);
 }
 
-.thumb{
-  
+.thumb {
 }
 
 @keyframes fadeIn {
@@ -185,11 +184,11 @@ input {
 
 @media screen and (max-width: 600px) {
   .investor-hero {
-    display: block!important;
+    display: block !important;
   }
 
   .m-deskbg {
-    margin-top: -100px!important;
+    margin-top: -100px !important;
     z-index: 1000;
   }
 

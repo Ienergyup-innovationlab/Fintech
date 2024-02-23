@@ -12,6 +12,7 @@ import FinancialDoc from "./components/FinanceDoc/financialDocInvestor";
 import Profilenotupdated from "./components/ProfileUpdate/Profilenotupdated";
 import FarmTech from "./components/FarmTech/FarmTech";
 import EditPage from "./components/FarmTech/EditPage";
+import Chatpage from "./components/Messenger/Chatpage";
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/ProfileUpdate" element={<Profilenotupdated />}  />
         <Route path="/FarmTech" element={<FarmTech />}  />
         <Route path="/EditPage" element={<EditPage />}  />
+        <Route path="/Chatpage" element={<Chatpage />}  />
       </Routes>
     </>
   );

@@ -15,6 +15,10 @@ export default {
         black: "#000000",
         brickRed: "#D63A3A",
         inputGrey: "#F7F7F7",
+        sidebarbg: "#262626",
+        chatbar: "#ECE5F5",
+
+
       },
     },
     fontFamily: {
