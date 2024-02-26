@@ -37,7 +37,9 @@ const SendmoneyPage = () => {
                             <div className="font-semibold text-lg mt-8">
                                 <button type="button" 
                                     className="px-10 py-5 text-lg font-medium text-center text-primary bg-white rounded-[50px] hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <Link to="/AddMomeyPage">
                                     + Add Money
+                                    </Link>
                                 </button>
                             </div>
                         </div>

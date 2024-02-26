@@ -298,6 +298,9 @@ input {
   align-items: center;
 }
 
+.bg-formcolor {
+  background-color: #a47cdf66;
+}
 .popup-inner {
   position: relative;
   padding-top: 32px;

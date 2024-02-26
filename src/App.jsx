@@ -15,6 +15,9 @@ import Dashboard from "./components/DashboardPage/dashboardPage";
 import SendmoneyPage from "./components/SendMoney/SendMoneyPage";
 import SendDetailsPage from "./components/SendDetails/SendDetailsPage";
 import SuccessPage from "./components/Successful/successPage";
+import AddmoneyPage from "./components/AddMoney/AddMoneyPage";
+import WithdrawmoneyPage from "./components/WithdrawMoney/WithdrawMoneyPage";
+import WithdrawSuccessful from "./components/WithdrawMoney/WithdrawSuccessfulPage";
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
         <Route path="/SendMoneyPage" element={<SendmoneyPage />} />
         <Route path="/SendDetailsPage" element={<SendDetailsPage />} />
         <Route path="/SuccessPage" element={<SuccessPage />} />
+        <Route path="/AddMomeyPage" element={<AddmoneyPage />} />
+        <Route path="/WithdrawMoneyPage" element={<WithdrawmoneyPage />} />
+        <Route path="/WithdrawSuccessfulPage" element={<WithdrawSuccessful />} />
         <Route
           path="/BusinessRegistration"
           element={<BusinessInvestorForm />}

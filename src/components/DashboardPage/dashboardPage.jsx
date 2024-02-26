@@ -46,7 +46,9 @@ const DashboardPage = () => {
                             <div className="font-semibold text-lg float-right">
                                 <button type="button" 
                                     className="px-10 py-5 text-sm font-medium text-center text-primary bg-white rounded-lg hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <Link to="/AddMomeyPage">
                                     + Add Money
+                                    </Link>
                                 </button>
                             </div>
                         </div>
@@ -64,8 +66,10 @@ const DashboardPage = () => {
                             </Link>
                         </div>
                         <div className="font-semibold text-lg sm-txt">
-                            <img src={WithdrawIcon} alt="" className="pl-1 sm-img" /><br />
-                            Withdraw
+                            <Link to="/WithdrawMoneyPage">
+                                <img src={WithdrawIcon} alt="" className="pl-1 sm-img" /><br />
+                                Withdraw
+                            </Link>
                         </div>
                         <div className="font-semibold text-lg sm-txt">
                             <img src={AirtimeIcon} alt=""  className="sm-img" /><br />
