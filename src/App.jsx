@@ -13,9 +13,9 @@ import Profilenotupdated from "./components/ProfileUpdate/Profilenotupdated";
 import FarmTech from "./components/FarmTech/FarmTech";
 import EditPage from "./components/FarmTech/EditPage";
 import Chatpage from "./components/Messenger/Chatpage";
-
-
-
+import Ratings from "./components/Ratings/CustomerSupport/Ratings";
+import SendReport from "./components/Ratings/CustomerSupport/sendReport";
+import ChatSupport from "./components/Ratings/CustomerSupport/chatSupport";
 
 function App() {
   return (
@@ -30,11 +30,14 @@ function App() {
         <Route path="/InvestorRegistration" element={<InvestorReg />} />
         <Route path="/VerificationDocPage" element={<VerificationDoc />} />
         <Route path="/FinancialDocInvestor" element={<FinancialDoc />} />
-        <Route path="/BusinessRegistration" element={<BusinessInvestorForm />} />
-        <Route path="/ProfileUpdate" element={<Profilenotupdated />}  />
-        <Route path="/FarmTech" element={<FarmTech />}  />
-        <Route path="/EditPage" element={<EditPage />}  />
-        <Route path="/Chatpage" element={<Chatpage />}  />
+        <Route path="/BusinessRegistration" element={<BusinessInvestorForm />}/>
+        <Route path="/ProfileUpdate" element={<Profilenotupdated />} />
+        <Route path="/FarmTech" element={<FarmTech />} />
+        <Route path="/EditPage" element={<EditPage />} />
+        <Route path="/Chatpage" element={<Chatpage />} />
+        <Route path="/Ratings" element={<Ratings />} />
+        <Route path="/sendReport" element={<SendReport />} />
+        <Route path="/chatSupport" element={<ChatSupport />} />
       </Routes>
     </>
   );

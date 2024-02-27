@@ -1,5 +1,5 @@
 import React from "react";
-import searchicon from "../images/search-icon.png";
+import { BsSearch } from "react-icons/bs";
 
 const Navbarchat = () => {
   return (
@@ -10,9 +10,8 @@ const Navbarchat = () => {
           type="text"
           placeholder="Search"
         />
-        <img
-          src={searchicon}
-          alt=""
+        <BsSearch
+          color="white"
           className="block float-right w-7 h-7 border border-none outline-none mt-[100px]"
         />
         <a href="#"></a>
