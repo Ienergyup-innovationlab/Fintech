@@ -18,8 +18,6 @@ const Input = () => {
     setText(text + emoji);
   };
 
-  const [file, setFile] = useState("");
-
   return (
     <div className="h-16 w-full bg-white cursor-pointer border border-none">
       <input
