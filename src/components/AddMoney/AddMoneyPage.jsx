@@ -1,5 +1,5 @@
 import ArrowBack from "../images/arrow-back.png";
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 import PayPal from "../images/paypal.png";
 import Rectangle from "../images/Rectangle.png";
@@ -14,7 +14,7 @@ const AddmoneyPage = () => {
 
     return (
       <>
-         <div className="mt-12 px-20 pd-mobile">
+         <div className="mt-4 px-20 pd-mobile">
             <div className="w-1/2 justify-between flex">
                 <div className="text-primary">
                     <Link to="/DashboardPage">
@@ -23,9 +23,9 @@ const AddmoneyPage = () => {
                 </div>
                 
             </div>
-            <div className="my-10 p-8 bg-lightpurple rounded-[10px]">
+            <div className="my-4 py-2 px-8 bg-lightpurple rounded-[10px]">
                 <div className="flex flex-row justify-between gap-8">
-                    <div className="grid flex-wrap w-full md:w-2/5 mt-6 py-12 px-12">
+                    <div className="grid flex w-full md:w-2/5 mt-6 py-6 px-12">
                         <div className="text-primary text-center mb-6">
                             <h3 className="text-[24px] font-bold">Payment Method</h3>
                         </div>
@@ -35,7 +35,7 @@ const AddmoneyPage = () => {
                             <div><img src={Mastercard} alt="" /></div>
                         </div>
                         <div className="mt-10">
-                            <div className="text-primary text-center mb-6">
+                            <div className="text-primary mb-6">
                                 <h3 className="text-[24px] font-bold">Other Payment Methods</h3>
                             </div>
                             <div className="flex mb-2">
@@ -132,7 +132,7 @@ const AddmoneyPage = () => {
                             <div className="font-semibold text-lg text-center mt-8">
                                 <button type="button" 
                                     className="px-20 py-4 text-[26px] font-medium text-center text-white bg-primary rounded-[12px] hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    <Link to="/">
+                                    <Link to="/SuccessPage">
                                         Pay N80,000.00
                                     </Link>
                                 </button>

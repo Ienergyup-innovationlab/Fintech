@@ -330,37 +330,48 @@ input {
   }
 }
 
-.content-success {
-  width: 100%;
+.w-hight {
   height: 100%;
-  position: absolute;
 }
 
-.success-pd {
-  position: absolute;
+.svg-details {
+  display: block;
+  height: 300px;
+  width: 100%;
+  color: #000000; /* SVG path use currentColor to inherit this */
+  text-align: center;
+  align-items: center;
 }
 
+hr {
+  height: 2px!important;
+  border-width:0;
+  color:rgb(220, 219, 219);
+  background-color:rgb(220, 219, 219);
+}
 .circle {
-  stroke-dasharray: 1194;
-  stroke-dashoffset: 1194;
-  animation: dc 1s ease-in-out;
-  animation-fill-mode: forwards;
-}
-.tick {
-  stroke-dasharray: 350;
-  stroke-dashoffset: 350;
-  animation: dt 0.8s ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: 0.95s;
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  animation: draw 1s forwards;
 }
 
-@keyframes dc {
-  from {
-    stroke-dashoffset: 1194;
-  }
-  to {
-    stroke-dashoffset: 2388;
-  }
+.svg-circle {
+  padding-left: 430px;
+}
+
+.bill-img {
+  width: 150px;
+  height: 150px;
+}
+
+.tick {
+  stroke-dasharray: 18;
+  stroke-dashoffset: 18;
+  animation: draw 1s forwards 1s;
+}
+
+@keyframes draw { 
+  to { stroke-dashoffset: 0 } 
 }
 
 @keyframes dt {
@@ -444,6 +455,15 @@ input {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .svg-circle {
+    padding-left: 150px;
+  }
+
+  .bill-img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and (min-width: 760px) and (max-width: 1200px){
@@ -460,5 +480,14 @@ input {
   }
   .debt-row {
     margin-right: 0.75rem!important;
+  }
+
+  .svg-circle {
+    padding-left: 300px;
+  }
+
+  .bill-img {
+    width: 100px;
+    height: 100px;
   }
 }

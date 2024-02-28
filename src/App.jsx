@@ -18,6 +18,7 @@ import SuccessPage from "./components/Successful/successPage";
 import AddmoneyPage from "./components/AddMoney/AddMoneyPage";
 import WithdrawmoneyPage from "./components/WithdrawMoney/WithdrawMoneyPage";
 import WithdrawSuccessful from "./components/WithdrawMoney/WithdrawSuccessfulPage";
+import BillPaymentPage from "./components/BillPayment/billPaymentPage";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/AddMomeyPage" element={<AddmoneyPage />} />
         <Route path="/WithdrawMoneyPage" element={<WithdrawmoneyPage />} />
         <Route path="/WithdrawSuccessfulPage" element={<WithdrawSuccessful />} />
+        <Route path="/billPaymentPage" element={<BillPaymentPage />} />
         <Route
           path="/BusinessRegistration"
           element={<BusinessInvestorForm />}

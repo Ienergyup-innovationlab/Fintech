@@ -76,8 +76,10 @@ const DashboardPage = () => {
                             Airtime
                         </div>
                         <div className="font-semibold text-lg sm-txt">
+                            <Link to="/billPaymentPage">
                             <img src={PaybillIcon} alt=""  className="sm-img" /><br />
                             Pay Bills
+                            </Link>
                         </div>
                         <div className="font-semibold text-lg sm-txt">
                             <img src={MultiCardIcon} alt="" className="pl-3 sm-imges" /><br />
