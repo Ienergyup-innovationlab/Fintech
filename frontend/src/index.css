@@ -346,9 +346,10 @@ input {
 hr {
   height: 3px!important;
   border-width:0;
-  color:rgb(146, 144, 144);
+  color:rgb(146, 144, 144, 0.6);
   background-color:rgb(146, 144, 144, 0.6);
 }
+
 .circle {
   stroke-dasharray: 76;
   stroke-dashoffset: 76;
