@@ -344,10 +344,10 @@ input {
 }
 
 hr {
-  height: 2px!important;
+  height: 3px!important;
   border-width:0;
-  color:rgb(220, 219, 219);
-  background-color:rgb(220, 219, 219);
+  color:rgb(146, 144, 144);
+  background-color:rgb(146, 144, 144, 0.6);
 }
 .circle {
   stroke-dasharray: 76;
