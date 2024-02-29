@@ -1,7 +1,7 @@
 import ArrowBack from "../images/arrow-back.png";
-import 
+import CopyIcon from "../images/copy-icon.png";
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
 
 const AddmoneyPage = () => {
 
@@ -31,9 +31,10 @@ const AddmoneyPage = () => {
                     <div className="flex flex-row justify-between gap-8">
                         <div className="grid flex w-full md:w-1/2 mt-6 py-6 px-12">
                             <p>Account No:</p>
-                            <p className="text-md font-semibold mt-2" value={copyText} onChange={(e)=>setCopyText(e.target.value)}>0987654321
-                            
-                            </p>
+                            <div className="flex gap-2">
+                            <p className="text-md font-semibold mt-2" value={copyText} onChange={(e)=>setCopyText(e.target.value)}>0987654321</p>
+                            <img src={CopyIcon} alt=""  onClick={handleCopy} />
+                            </div>
                         </div>
                         <div className="w-full flex-wrap md:w-1/2 mt-12 px-10">
                         
