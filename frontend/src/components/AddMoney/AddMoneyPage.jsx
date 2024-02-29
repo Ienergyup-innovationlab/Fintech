@@ -8,7 +8,7 @@ const AddmoneyPage = () => {
     return (
       <>
         <div className="bg-lightpurple">
-            <div className="px-20 pd-mobile bg-white py-4">
+            <div className="px-20 pd-mobile bg-white py-4 drop-shadow-md">
                 <div className="w-1/2 justify-between flex">
                     <div className="text-primary">
                         <Link to="/DashboardPage">
@@ -18,7 +18,7 @@ const AddmoneyPage = () => {
                     
                 </div>
             </div>
-            <hr />
+            <hr  />
             <div className="text-center">
                 <div className="my-4 py-2 px-8 rounded-[10px]">
                     <div className="flex flex-row justify-between gap-8">
