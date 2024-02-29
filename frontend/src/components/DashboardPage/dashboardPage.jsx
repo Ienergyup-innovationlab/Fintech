@@ -46,7 +46,7 @@ const DashboardPage = () => {
                             <div className="font-semibold text-lg float-right">
                                 <button type="button" 
                                     className="px-10 py-5 text-sm font-medium text-center text-primary bg-white rounded-lg hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    <Link to="/AddMomeyPage">
+                                    <Link to="/AddMoneyP">
                                     + Add Money
                                     </Link>
                                 </button>
