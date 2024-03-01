@@ -2,11 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .onboard1 {
   animation: fadeIn 1s ease-in-out forwards;
@@ -24,11 +23,11 @@
 }
 
 .src-bg {
-  background-color: #805DB34D;
+  background-color: #805db34d;
 }
 
 .src-text {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 .custom-range-slider:hover {
@@ -62,7 +61,7 @@
   width: 100%;
   height: 430px;
   z-index: 1000;
-  display: none!important;
+  display: none !important;
 }
 
 textarea,
@@ -74,7 +73,7 @@ input {
 }
 
 .m-deskbg {
-  margin-top: 50px!important;
+  margin-top: 50px !important;
 }
 
 .round {
@@ -85,7 +84,7 @@ input {
   text-align: center;
 }
 
-.topnav-div { 
+.topnav-div {
   background: #000000;
   color: #ffffff;
   clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
@@ -187,7 +186,7 @@ input {
   font-size: 13px;
 }
 
-.file-input > [type='file'] {
+.file-input > [type="file"] {
   position: absolute;
   top: 0;
   left: 0;
@@ -216,7 +215,7 @@ input {
 .file-input > .label {
   color: #333;
   white-space: nowrap;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .file-input.-chosen > .label {
@@ -236,11 +235,11 @@ input {
 }
 
 .icon-height {
-  height: 150px!important;
+  height: 150px !important;
 }
 
 .p-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hr-sect {
@@ -271,15 +270,15 @@ input {
 }
 
 .p-12row {
-  padding: 3rem!important;
+  padding: 3rem !important;
 }
 
 .debt-row {
-  margin-right: 17rem!important;
+  margin-right: 17rem !important;
 }
 
 .pd-left {
-  padding-left: 4rem!important;
+  padding-left: 4rem !important;
 }
 
 .pd-btm {
@@ -376,16 +375,15 @@ input {
   .custom-range-slider {
     width: 345px;
   }
-
 }
 
 @media screen and (max-width: 800px) {
   .investor-hero {
-    display: block!important;
+    display: block !important;
   }
 
   .m-deskbg {
-    margin-top: -100px!important;
+    margin-top: -100px !important;
     z-index: 1000;
   }
 
@@ -408,15 +406,15 @@ input {
   }
 
   .p-12row {
-    padding: 0.75rem!important;
+    padding: 0.75rem !important;
   }
-  
+
   .debt-row {
-    margin-right: 0.75rem!important;
+    margin-right: 0.75rem !important;
   }
 
   .pd-left {
-    padding-left: 0rem!important;
+    padding-left: 0rem !important;
   }
 
   .detcardbtm {
@@ -425,11 +423,11 @@ input {
   }
 
   .sm-img {
-    max-width: 50px!important;
+    max-width: 50px !important;
   }
 
   .sm-imges {
-    max-width: 60px!important;
+    max-width: 60px !important;
   }
 
   .sm-txt {
@@ -446,19 +444,23 @@ input {
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1200px){
+.inputpg {
+  height: calc(100% - 245px);
+}
+
+@media screen and (min-width: 760px) and (max-width: 1200px) {
   .tab-width {
-    width: 100%!important;
+    width: 100% !important;
   }
 
   .tab-pleft {
-    padding-left: 10px!important;
+    padding-left: 10px !important;
   }
 
   .hello-botom {
     margin-bottom: 0px;
   }
   .debt-row {
-    margin-right: 0.75rem!important;
+    margin-right: 0.75rem !important;
   }
 }
