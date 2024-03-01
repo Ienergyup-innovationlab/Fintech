@@ -370,6 +370,17 @@ hr {
   animation: draw 1s forwards 1s;
 }
 
+.inputpg {
+  height: calc(100% - 245px);
+}
+
+
+
+
+
+
+
+
 @keyframes draw { 
   to { stroke-dashoffset: 0 } 
 }
@@ -465,9 +476,7 @@ hr {
   }
 }
 
-.inputpg {
-  height: calc(100% - 245px);
-}
+
 
 @media screen and (min-width: 760px) and (max-width: 1200px) {
   .tab-width {
@@ -496,5 +505,5 @@ hr {
     width: 100px;
     height: 100px;
   }
-}
+
 
