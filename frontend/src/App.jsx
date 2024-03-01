@@ -25,6 +25,9 @@ import Chatpage from "./components/Messenger/Chatpage";
 import Ratings from "./components/Ratings/CustomerSupport/Ratings";
 import SendReport from "./components/Ratings/CustomerSupport/sendReport";
 import ChatSupport from "./components/Ratings/CustomerSupport/chatSupport";
+import BillPaymentPage from "./components/BillPayment/billPaymentPage";
+import PaymentMethod from "./components/PaymentMethod/PaymentMethodPage";
+
 
 function App() {
   return (
@@ -45,12 +48,19 @@ function App() {
         <Route path="/SendMoneyPage" element={<SendmoneyPage />} />
         <Route path="/SendDetailsPage" element={<SendDetailsPage />} />
         <Route path="/SuccessPage" element={<SuccessPage />} />
-        <Route path="/AddMomeyPage" element={<AddmoneyPage />} />
+        <Route path="/AddMoneyPage" element={<AddmoneyPage />} />
         <Route path="/WithdrawMoneyPage" element={<WithdrawmoneyPage />} />
+
         <Route
           path="/WithdrawSuccessfulPage"
           element={<WithdrawSuccessful />}
         />
+
+        <Route path="/WithdrawSuccessfulPage" element={<WithdrawSuccessful />} />
+        <Route path="/billPaymentPage" element={<BillPaymentPage />} />
+        <Route path="/PaymentMethodPage" element={<PaymentMethod />} />
+        
+
         <Route
           path="/BusinessRegistration"
           element={<BusinessInvestorForm />}

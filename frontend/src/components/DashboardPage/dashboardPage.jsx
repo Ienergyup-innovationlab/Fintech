@@ -46,7 +46,7 @@ const DashboardPage = () => {
                             <div className="font-semibold text-lg float-right">
                                 <button type="button" 
                                     className="px-10 py-5 text-sm font-medium text-center text-primary bg-white rounded-lg hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    <Link to="/AddMomeyPage">
+                                    <Link to="/AddMoneyPage">
                                     + Add Money
                                     </Link>
                                 </button>
@@ -76,8 +76,10 @@ const DashboardPage = () => {
                             Airtime
                         </div>
                         <div className="font-semibold text-lg sm-txt">
+                            <Link to="/billPaymentPage">
                             <img src={PaybillIcon} alt=""  className="sm-img" /><br />
                             Pay Bills
+                            </Link>
                         </div>
                         <div className="font-semibold text-lg sm-txt">
                             <img src={MultiCardIcon} alt="" className="pl-3 sm-imges" /><br />
@@ -118,7 +120,9 @@ const DashboardPage = () => {
                         <div className="font-semibold text-lg">
                         <button type="button" 
                             className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <Link to="/">
                             Invest
+                            </Link>
                         </button>
                         </div>
                     </div>
