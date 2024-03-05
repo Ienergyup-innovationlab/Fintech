@@ -320,6 +320,20 @@ input {
   margin-top: 100px;
 }
 
+.list-num {
+  margin-bottom:10px;
+}
+.list-num span {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background-color:#805db3;
+  color:#fff;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
