@@ -61,7 +61,7 @@ const AddmoneyPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full flex-wrap md:w-1/2 mt-12 px-10">
+                        <div className="w-full flex-wrap md:w-1/2 px-10">
                             <div className="pt-12">
                                 <img src={AbcCard} alt="" />
                             </div>
