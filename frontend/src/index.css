@@ -320,14 +320,24 @@ input {
   margin-top: 100px;
 }
 
+
 .inputpg {
   height: calc(100% - 245px);
 }
 
-
-
-
-
+.list-num {
+  margin-bottom:10px;
+}
+.list-num span {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background-color:#805db3;
+  color:#fff;
+}
 
 
 
@@ -384,6 +394,7 @@ hr {
   stroke-dashoffset: 18;
   animation: draw 1s forwards 1s;
 }
+
 
 @keyframes draw { 
   to { stroke-dashoffset: 0 } 
