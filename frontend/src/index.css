@@ -320,6 +320,11 @@ input {
   margin-top: 100px;
 }
 
+
+.inputpg {
+  height: calc(100% - 245px);
+}
+
 .list-num {
   margin-bottom:10px;
 }
@@ -333,6 +338,12 @@ input {
   background-color:#805db3;
   color:#fff;
 }
+
+
+
+
+
+
 
 @keyframes fadeIn {
   0% {
@@ -383,16 +394,6 @@ hr {
   stroke-dashoffset: 18;
   animation: draw 1s forwards 1s;
 }
-
-.inputpg {
-  height: calc(100% - 245px);
-}
-
-
-
-
-
-
 
 
 @keyframes draw { 

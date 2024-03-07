@@ -39,39 +39,82 @@ const Navbar = () => {
           <div className="text-white font-bold text-lg cursor-pointer pt-8">
             <img src={logo} alt="" className="h-20" />
           </div>
-          
+
           {/* for larger device */}
           <div className="lg:flex items-center gap-4 hidden text-body pt-8">
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="home" className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="home"
+              className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
             >
               Home
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100}  to="invest" className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="invest"
+              className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+            >
               Invest
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100}  to="community" className="block text-white  hover:text-gray-400 py-2 px-4 cursor-pointer font-medium">
-              
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="community"
+              className="block text-white  hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+            >
               Community
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100}  to="loan" className="block text-white  hover:text-gray-400 py-2 px-4 cursor-pointer font-medium">
-              
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="loan"
+              className="block text-white  hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+            >
               Loan
             </Link>
-            
           </div>
 
           {/* contact me btn */}
           <div className="lg:flex hidden bg-black py-8 pl-20 pr-10 pt-12 topnav-div">
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="message" className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+            <Link
+              to="/Chatpage"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
             >
               <img src={IconComment} alt="" className="mb-2 pl-5" />
               Message
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100}  to="notification" className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="notification"
+              className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+            >
               <img src={IconNotify} alt="" className="mb-2 pl-8" />
               Notification
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100}  to="search" className="block text-white  hover:text-gray-400 py-2 px-4 cursor-pointer font-medium">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="search"
+              className="block text-white  hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+            >
               <img src={IconSearch} alt="" className="mb-2 pl-5" />
               Search
             </Link>
@@ -86,25 +129,74 @@ const Navbar = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="mt-4 bg-body p-4 rounded-lg text-white">
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="home" className="block hover:text-gray-400 py-2">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="home"
+              className="block hover:text-gray-400 py-2"
+            >
               Home
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="invest" className="block hover:text-gray-400 py-2">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="invest"
+              className="block hover:text-gray-400 py-2"
+            >
               Invest
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="community" className="block hover:text-gray-400 py-2">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="community"
+              className="block hover:text-gray-400 py-2"
+            >
               Community
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="loan" className="block hover:text-gray-400 py-2">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="loan"
+              className="block hover:text-gray-400 py-2"
+            >
               Loan
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="message" className="block hover:text-gray-400 py-2">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="message"
+              className="block hover:text-gray-400 py-2"
+            >
               Message
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="notification" className="block hover:text-gray-400 py-2">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="notification"
+              className="block hover:text-gray-400 py-2"
+            >
               Notification
             </Link>
-            <Link activeClass="active" smooth={true} spy={true} offset={-100} to="search" className="block hover:text-gray-400 py-2">
+            <Link
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              to="search"
+              className="block hover:text-gray-400 py-2"
+            >
               Search
             </Link>
           </div>

@@ -72,8 +72,10 @@ const DashboardPage = () => {
                             </Link>
                         </div>
                         <div className="font-semibold text-lg sm-txt">
+                            <Link to="/AirtimePage">
                             <img src={AirtimeIcon} alt=""  className="sm-img" /><br />
                             Airtime
+                            </Link>
                         </div>
                         <div className="font-semibold text-lg sm-txt">
                             <Link to="/billPaymentPage">
@@ -120,7 +122,7 @@ const DashboardPage = () => {
                         <div className="font-semibold text-lg">
                         <button type="button" 
                             className="px-5 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            <Link to="/">
+                            <Link to="/FarmTech">
                             Invest
                             </Link>
                         </button>
