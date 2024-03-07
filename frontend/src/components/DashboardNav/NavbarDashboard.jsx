@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from "../images/fundcraft-logo.png";
 import { HiMenu } from "react-icons/hi";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import IconComment from "../images/message-icon.png";
 import IconNotify from "../images/notification-icon.png";
 import IconSearch from "../images/search-icon.png";
@@ -37,7 +37,9 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between md:pl-12 tab-pleft">
           <div className="text-white font-bold text-lg cursor-pointer pt-8">
+            <Link to="/">
             <img src={logo} alt="" className="h-20" />
+            </Link>
           </div>
 
           {/* for larger device */}
@@ -91,7 +93,7 @@ const Navbar = () => {
               smooth={true}
               spy={true}
               offset={-100}
-              className="block text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
+              className="text-white hover:text-gray-400 py-2 px-4 cursor-pointer font-medium"
             >
               <img src={IconComment} alt="" className="mb-2 pl-5" />
               Message

@@ -1,4 +1,4 @@
-import NavbarDash from "./NavbarDashboard";
+import NavbarDash from "../DashboardNav/NavbarDashboard";
 import Footer from "../Footer";
 import UserImg from "../images/user-img.png";
 import Mastercard from "../images/mastercard-logo.png";
