@@ -320,6 +320,21 @@ input {
   margin-top: 100px;
 }
 
+.inputpg {
+  height: calc(100% - 245px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -465,9 +480,7 @@ hr {
   }
 }
 
-.inputpg {
-  height: calc(100% - 245px);
-}
+
 
 @media screen and (min-width: 760px) and (max-width: 1200px) {
   .tab-width {
@@ -496,5 +509,5 @@ hr {
     width: 100px;
     height: 100px;
   }
-}
+
 

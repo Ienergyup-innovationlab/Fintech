@@ -27,6 +27,8 @@ import SendReport from "./components/Ratings/CustomerSupport/sendReport";
 import ChatSupport from "./components/Ratings/CustomerSupport/chatSupport";
 import BillPaymentPage from "./components/BillPayment/billPaymentPage";
 import PaymentMethod from "./components/PaymentMethod/PaymentMethodPage";
+import AirtimePage from "./components/AirtimeTopup/AirtimePage";
+
 
 
 function App() {
@@ -72,6 +74,8 @@ function App() {
         <Route path="/Ratings" element={<Ratings />} />
         <Route path="/sendReport" element={<SendReport />} />
         <Route path="/chatSupport" element={<ChatSupport />} />
+        <Route path="/AirtimePage" element={<AirtimePage />} />
+        
       </Routes>
     </>
   );
