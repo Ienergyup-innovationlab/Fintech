@@ -389,6 +389,11 @@ hr {
   height: 150px;
 }
 
+.atmcard-img {
+  width: 100%;
+  height: 250px;
+}
+
 .tick {
   stroke-dasharray: 18;
   stroke-dashoffset: 18;
