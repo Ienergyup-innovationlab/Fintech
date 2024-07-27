@@ -21,6 +21,9 @@ export default {
         fail: "#FFEBEE",
         successtext: "#1A7A1E",
         failtext: "#E92E4F",
+        sidebarbg: "#262626",
+        chatbar: "#ECE5F5",
+        bgaddmoney: "#E2E2D4",
       },
     },
     fontFamily: {
